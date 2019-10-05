@@ -3,14 +3,80 @@
 <html lang="en"> <!--This website content is in English-->
   
   <head>
+		<title>Simple Rabbit &</title>
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>                        <!--Navigation links to topics-->
+	        	<li><a href="/goodies">Goodies</a></li>
+        		<li><a href="/current">Current</a></li>
+        		<li><a href="/nearby">Nearby</a></li>
+            <li><a href="/explore">Exploring</a></li>
+            <li><a href="/dwellings">Dwellings</a></li>
+    		</ul>
+		</nav>
+  
+<!--   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Simple Rabbit &</title>
     <LINK href="styles.css" rel="stylesheet" type="text/css">
-  </head>
+  </head> -->
 
   <body>
-    <h1> Goodies </h1>  <!--links--> 
-    <u1>
+    <div class="container">
+    		<div class="blurb">
+        		<h1>Exploring</h1>	
+              <p>What are the chances? Uncertainty follows travellers on their journey.&nbsp;</p>
+              <p>An event can be composed of one (ie. elementary event) or multiple outcomes. Outcomes are results that cannot be decomposed into sub-events. A random experiment is where the outcome varies in an unpredictable fashion when repeated.. The set of all possible outcomes is the sample space.<span style="background-color: #ccffcc;"> Sample spaces can be countable (ie. discrete) or continuous</span>.&nbsp;</p>
+              <p>Axioms of Probability</p>
+
+              <ul> <!--start of list of axioms of probability-->
+                <li>0 &lt;= P[A]</li>
+              <ul>
+                <li>&nbsp;<span style="color: #808080;">(probability of event A occurring is a non-negative value)</span></span></li>
+              </ul>
+
+                 <li>P[S] = 1</li>
+              <ul>
+                 <li>&nbsp;(probability of event S, equivalent to the sample space, is one)</span></li>
+              </ul>
+
+                  <li>P[A&rsquo;] = 1 - P[A]</li>
+              <ul>
+                  <li>&nbsp;<span style="color: #808080;">(probability of event A not occurring is the prime of probability of event A occurring)</span></li>
+              </ul>
+
+                  <li>A and B = null -&gt; P[A or B] = P[A] + P[B]</li>
+              <ul>
+                  <li>&nbsp;<span style="font-weight: 400; color: #808080;">(if event A and B are mutually exclusive, then the probability of event A or event B occurring is the sum of the probability of event A, B)</span></li>
+              </ul>
+
+              
+                  <li>A, B independent &lt; = &gt; P[A and B] = P[A]P[B]   </li>
+              <ul>
+                  <li>&nbsp;<span style="font-weight: 400; color: #808080;">(events A, B are independent if and only if the probability of event A and B occurring is the product of probability of event A, B)</span></li>
+              </ul>
+
+                  <li>P [A|B] = P[A and B] / P [B]</li>
+              <ul>
+                  <li>&nbsp;<span style="font-weight: 400; color: #808080;">Conditional probability: probability of event A occurring given that event B has occurred is the product of the probability of event A and B occuring, divided by the probability of all instances where event B occurs</span></li>
+              </ul>
+              
+
+                <li>P [A|B] = P[B and A]P[A]/SUM( all P[B]&rsquo;s) </li>
+              <ul>
+                <li>&nbsp;<span style="font-weight: 400; color: #808080;">Baye&rsquo;s Rule: probability of event A occurring given that event B has occurred is the product of the probability of event B and A occuring and probability of event A, divided by the probability of all instances where event B occurs</span></li>
+              </ul>
+
+              </ul> <!--end of list of axioms of probability-->
+              <p>Things to Remember</p>
+             <p></p>
+    </div><!-- /.blurb -->
+		</div><!-- /.container -->
+    
+<!--     <h1> Goodies </h1>  <!--links--> 
+<!--     <u1>
       <li> mushroom </li>
       <li> salt </li>
       <li> black pepper </li>
@@ -49,62 +115,14 @@
       <li> Algorithms to get to where we want to go </li>
     <u1>
       <p> Those will be direct links to other pages with content</p>
-      <p> Like a button!! </p>
+      <p> Like a button!! </p> --> -->
       
 
- <h1> Exploring</h1>
-
-    <p>What are the chances? Uncertainty follows travellers on their journey.&nbsp;</p>
-    <p>An event can be composed of one (ie. elementary event) or multiple outcomes. Outcomes are results that cannot be decomposed into sub-events. A random experiment is where the outcome varies in an unpredictable fashion when repeated.. The set of all possible outcomes is the sample space.<span style="background-color: #ccffcc;"> Sample spaces can be countable (ie. discrete) or continuous</span>.&nbsp;</p>
-    <p>Axioms of Probability</p>
-    <ul> <!--start of list of axioms of probability-->
-    <li>0 &lt;= P[A]</li>
-    <ul>
-    <li>&nbsp;<span style="color: #808080;">(probability of event A occurring is a non-negative value)</span></span></li>
-    </ul>
-    <li>P[S] = 1</li>
-    <ul>
-    <li>&nbsp;(probability of event S, equivalent to the sample space, is one)</span></li>
-    </ul>
-    <li>P[A&rsquo;] = 1 - P[A]</li>
-    <ul>
-    <li>&nbsp;<span style="color: #808080;">(probability of event A not occurring is the prime of probability of event A occurring)</span></li>
-    </ul>
-    <li>A and B = null -&gt; P[A or B] = P[A] + P[B]</li>
-    <ul>
-    <li>&nbsp;<span style="font-weight: 400; color: #808080;">(if event A and B are mutually exclusive, then the probability of event A or event B occurring is the sum of the probability of event A, B)</span></li>
-    </ul>
-    <ul>
-    <li>A, B independent &lt; = -&gt; P[A and B] = P[A]P[B]   </li>
-    </ul>
-    </ul>
-    <ul>
-    <li>&nbsp;<span style="font-weight: 400; color: #808080;">(events A, B are independent if and only if the probability of event A and B occurring is the product of probability of event A, B)</span></li>
-    </ul>
-    </ul>
-    <ul>
-    <li>P [A|B] = P[A and B] / P [B]</li>
-    </ul>
-    </ul>
-    <ul>
-    <li>&nbsp;<span style="font-weight: 400; color: #808080;">Conditional probability: probability of event A occurring given that event B has occurred is the product of the probability of event A and B occuring, divided by the probability of all instances where event B occurs</span></li>
-    </ul>
-    </ul>
-    <ul>
-    <li>P [A|B] = P[B and A]P[A]/SUM( all P[B]’s) </li>
-    </ul>
-    </ul>
-    <ul>
-    <li>&nbsp;<span style="font-weight: 400; color: #808080;">Baye’s Rule: probability of event A occurring given that event B has occurred is the product of the probability of event B and A occuring and probability of event A, divided by the probability of all instances where event B occurs</span></li>
-    </ul>
-
-    </ul> <!--end of list of axioms of probability-->
-    <p>Things to Remember</p>
-    <p></p>
+<!-- 
 
       
       
-    <h1> Dwelling</h1>
+    <h1> Dwellings</h1>
       <u1>
       <li> Behaviour </li>
       <li> Economics </li>
@@ -113,19 +131,25 @@
     <u1>
       <p> Lets have direct links here as well!</p>
       <p> Remember to stir!! </p>
+     -->
     
-    
-    <h1>Into the forest. In the big green forest, under the big blue sky, lived Small rabbit.</h1>
+
   
-    <p>He had</p>
+    
+    <footer>
+    <ul>
+      <p>Into the forest. In the big green forest, under the big blue sky, lived Simple Rabbit and his favorite dandelion.</p>
+      <p>He had</p>
       <ul> <!--Description of rabbit -->
         <li>gray fur</li>
         <li>black eyes</li>
-        <li>big tail</li>
+        <li>a big tail</li>
+        <li>and a lovely yellow dandelion</li>
       </ul>
-  
-    <p>Unfortunately, Small rabbit did not have a home because he never built one. It was cozy sleeping in the roots of trees and lying on top of leaves.>
-
-   
+      <p>It was cozy sleeping in the roots of trees and lying on top of leaves.</p>
+      <p>One day, his dandelion blew away. Simple Rabbit decides to venture out of the roots of the trees.</p>
+		</ul>
+		</footer>
    </body>
 </html>
+
