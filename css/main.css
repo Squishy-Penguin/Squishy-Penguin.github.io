@@ -96,7 +96,7 @@ hero-button :hover { /*change background color of button when cursor hovers over
 .picture1 {
    width:100px;
    height:100px; 
-   background-image:url("./assets/images/banner1.jpg");
+   background-image:url("rabbit%201.png");
    margin:0; /* If you want no margin */
    padding:0; /*if your want to padding */
 }
