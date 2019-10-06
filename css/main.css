@@ -30,7 +30,7 @@ body {
   content: ""; 
  
   position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
-  background-image: url("https://github.com/Squishy-Penguin/Squishy-Penguin.github.io/blob/master/images/banner1.jpeg.jpg");
+  background-image: url("/blob/master/images/banner1.jpeg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
