@@ -30,7 +30,7 @@ body {
   content: ""; 
  
   position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
-  background-image: url("../rabbit%201.png");
+  background-image: url("https://github.com/Squishy-Penguin/Squishy-Penguin.github.io/blob/master/css/rabbit%201.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +43,7 @@ body {
 .hero-content{
   position: relative; 
   font-family: "Monserrat", sans-serif; /*placeholder for now*/
-  color: white;
+  color: black;
   text-align: centre;
   margin: 0.625rem;
 }
