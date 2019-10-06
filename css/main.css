@@ -1,7 +1,3 @@
-body {
-    margin: 60px auto;
-    width: 70%;
-}
 
 /*Background image settings*/
 /*     html { 
@@ -15,13 +11,19 @@ body {
 /*Start: Banner image settings*/
 
 /* Simple rabbit journey images */
-.banner-image {
+body {
+    margin: 0;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh; /*take up entire page*/
 
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/banner1.png);
 
   /* Set a specific height */
-  height: 50%;
+  /*height: 50%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -31,7 +33,7 @@ body {
 }
 
 /* Place text in the middle of the image */
-.banner-text {
+.hero-text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -40,7 +42,7 @@ body {
   color: white;
 }
 
-.journey-start button:hover { /*change background color of button when cursor hovers over it*/
+.hero-text button:hover { /*change background color of button when cursor hovers over it*/
   background-color: #555;
   color: white;
 }
