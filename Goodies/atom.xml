@@ -6,7 +6,7 @@ layout: feed
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-	<title>Simple Rabbit & Humble Hare</title>
+	<title>Simple Rabbit and Humble Hare</title>
 	<link href="http://Squishy-Penguin.github.io/Goodies/atom.xml" rel="self"/>
 	<link href="http://Squishy-Penguin.github.io/Goodies"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
