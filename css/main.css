@@ -18,32 +18,52 @@ body {
 .hero {
   width: 100vw;
   height: 100vh; /*take up entire page*/
+  
+  display: flex;
+  justify-content: center;
+  align-items: center; /*use flexbox to align image*/
+  text-align: centre;
+  color: white;
 
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/banner1.png);
-
-  /* Set a specific height */
-  /*height: 50%;*/
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://Squishy-Penguin.github.io/images/banner1.png');
+  
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  /*background-attachment: fixed;*/
+  position: relative; /* Position and center the image to scale nicely on all screens */
+  
+  
 }
 
-/* Place text in the middle of the image */
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+/*Sizing of headings should follow standard 3:1 ratio of headings to regular text*/
+.hero h1 {
+  font-size: 5em;
+  margin-top 0;
+  margin-bottom: 0.5em;
 }
 
-.hero-text button:hover { /*change background color of button when cursor hovers over it*/
-  background-color: #555;
+.hero .btn{
+  display: block;
+  width: 200px;
+  
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto; /*centred button*/
+  
+  /*text*/
+  color: white; 
+  text-decoration: none;
+  font-size: 1.5em
+  border: 3px solid white;
+  border-radius: 20px /*rounded button*/   
+  
+}
+
+.hero .btn:hover { /*change background color of button when cursor hovers over it*/
+  background-color: rgba(147, 112, 219, 0.8);
   color: white;
 }
 
