@@ -30,6 +30,11 @@ body {
   color: white;
 }
 
+.journey-start button:hover { /*change background color of button when cursor hovers over it*/
+  background-color: #555;
+  color: white;
+}
+
 /*Banner image settings: End*/
 
 nav ul, footer ul {
