@@ -30,7 +30,7 @@ body {
   content: ""; 
  
   position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
-  background-image: url("/blob/master/images/banner1.jpeg.jpg");
+  background-image: url("images/banner1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,7 +96,7 @@ hero-button :hover { /*change background color of button when cursor hovers over
 div.picture1 {
    width:100px;
    height:100px; 
-   background-image:url('assets/images/banner1.jpg');
+   background-image:url('images/banner1.jpg');
    margin:0; /* If you want no margin */
    padding:0; /*if your want to padding */
 }
