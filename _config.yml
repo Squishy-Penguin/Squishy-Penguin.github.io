@@ -1,4 +1,4 @@
 name: Simple Rabbit & Humble Hare
 markdown: kramdown #kramdown: free MIT-licensed Ruby library
 
-permalink: /Goodies/:year/:month/:day/:title 
+permalink: /goodies/:year/:month/:day/:title 
