@@ -1,1 +1,2 @@
-theme: jekyll-theme-slate
+name: Simple Rabbit & Humble Hare
+markdown: kramdown #kramdown: free MIT-licensed Ruby library
