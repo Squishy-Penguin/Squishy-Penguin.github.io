@@ -7,10 +7,10 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 	<title>Simple Rabbit & Humble Hare</title>
-	<link href="http://Squishy-Penguin.github.io/blog/atom.xml" rel="self"/>
-	<link href="http://Squishy-Penguin.github.io/blog"/>
+	<link href="http://Squishy-Penguin.github.io/Goodies/atom.xml" rel="self"/>
+	<link href="http://Squishy-Penguin.github.io/Goodies"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://Squishy-Penguin.github.io/blog</id>
+	<id>http://Squishy-Penguin.github.io/Goodies</id>
 	<author>
 		<name>Squishy-Penguin</name>
 	</author>
