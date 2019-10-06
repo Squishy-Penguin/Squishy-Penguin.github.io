@@ -23,7 +23,7 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/banner1.png);
 
   /* Set a specific height */
-  /*height: 50%;
+  /*height: 50%;*/
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
