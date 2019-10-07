@@ -30,7 +30,7 @@ body {
   content: ""; 
  
   position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
-  background-image: url("../assets/images/banner1.jpg");
+  background-image: url("../assets/images/banner1.jpg");  
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +43,7 @@ body {
 .hero-content{
   position: relative; 
   font-family: "Monserrat", sans-serif; /*placeholder for now*/
-  color: red;
+  color: #9370db;
   text-align: centre;
   margin: 0.625rem;
 }
@@ -86,8 +86,8 @@ body {
 }
 
 hero-button :hover { /*change background color of button when cursor hovers over it*/
-  background-color: rgba(147, 112, 219, 0.8);
-  border: 3px solid rgba(147, 112, 219, 0.8);
+  background-color: #9370db;
+  border: 3px solid #9370db;
   color: white;
 } 
 
