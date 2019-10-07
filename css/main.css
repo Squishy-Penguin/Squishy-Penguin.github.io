@@ -30,7 +30,7 @@ body {
   content: ""; 
  
   position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
-  background-image: url("https://github.com/Squishy-Penguin/Squishy-Penguin.github.io/blob/master/css/rabbit%201.png");
+  background-image: url("banner1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,7 +96,7 @@ hero-button :hover { /*change background color of button when cursor hovers over
 .picture1 {
    width:100px;
    height:100px; 
-   background-image:url("css/rabbit%201.png");
+   background-image:url("rabbit%201.png");
    margin:0; /* If you want no margin */
    padding:0; /*if your want to padding */
 }
