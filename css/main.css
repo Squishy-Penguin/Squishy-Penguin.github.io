@@ -30,7 +30,7 @@ body {
   content: ""; 
  
   position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(rabbit%201.png);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("https://66.media.tumblr.com/df094a745c42bd7b1317e2cac2211ded/tumblr_pyya8d0AF51uqxiazo1_1280.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
