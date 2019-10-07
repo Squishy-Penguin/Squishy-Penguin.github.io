@@ -40,7 +40,7 @@ body {
 .hero-content{
   position: relative; 
   font-family: "Monserrat", sans-serif; /*placeholder for now*/
-  color: red;
+  color: black;
   text-align: centre;
   margin: 0.625rem;
 }
