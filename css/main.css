@@ -30,13 +30,14 @@ body {
   content: ""; 
  
   position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
-  background-image: url(banner1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(banner1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-attachment: fixed;*/
   
-  filter: brightness(60%); /* Or use "linear-gradient" for dark effect on the image*/
+  background-attachment: fixed;
+  
+  /*filter: brightness(60%); /* Or use "linear-gradient" for dark effect on the image*/
 }
 
 /* Place text in the middle of the image */
@@ -96,7 +97,7 @@ hero-button :hover { /*change background color of button when cursor hovers over
 .picture1 {
    width:100px;
    height:100px; 
-   background-image: url(rabbit%201.png);
+   background-image: url(banner.jpg);
    
    margin:0; /* If you want no margin */
    padding:0; /*if your want to padding */
