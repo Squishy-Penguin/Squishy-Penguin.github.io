@@ -30,7 +30,7 @@ body {
   content: ""; 
  
   position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
-  background-image: url(/../images/banner1.jpg);
+  background-image: url(banner1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
