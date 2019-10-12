@@ -7,6 +7,10 @@ title: Simple Rabbit & Humble Hare
   <!--for loop to post posts-->
 
 	  {% for post in site.posts %}
+	---
+	layout: default
+	title: Simple Rabbit & Humble Hare
+	---
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ul>
