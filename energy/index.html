@@ -8,6 +8,42 @@ title: "Simple Rabbit & Humble Hare"
 
 
 
+<p>--------------------------------------------------------------------------------------------------</p>
+        <p>Converter Principles </p>
+        <p>Note: load is at outgoing branch, line is power source coming in </p>
+        <p>Load Regulation: capability to maintain a constant voltage/current at output despite any changes in load.</p>
+        <p>Line Regulation: capability to maintain a constant voltage/current at output despite any changes in input voltage.</p>
+        <p> Efficiency = Power Out/ Power In x 100%   = Power Out / (Power Out + Power Loss) x 100%</p>
+        
+        <p>Motivation: a resistor network (ie. voltage divider) is missing the regulation capabilities required.</p>
+        <p>On the other hand, replacing the resistor in the resistor network with a transistor allows the network to perform linear regulation, however efficiency is low (ie. only 1/2). </p>
+
+<p>KEY TERMS Switching Duty Cycle, D: ration of Ton/Toff &rarr; D in range [0, 1] D&rsquo; = 1-D fs, switching frequency = 1/Ts</p>
+
+<p>Small Ripple Approximation (SRA): typically, Vripple(t) << Voutput(t), hence we can treat output voltage as a DC component</p>
+
+<p>Inductor Volt-Second Balance: <VL> = 0 (change in inductor voltage) </p>
+<p>Capacitor Charge Balance (Amp-Second Balance): <iC> = 0 (change in capacitor current)</p>
+
+<p>For a periodic function, Xrms = sqrt(1/T* integral(0, T) {x(t)^2 dt})</p>
+
+<p>From Fourier analysis, the DC component = Average value Xavg = <x> = (1/T* integral(0, T) {x(t)^2 dt}</p>
+
+
+<p>Buck Converter&rarr; M(D) = D, Kcritical(D) = D&rsquo;, step down converter 2&#916;(iL) = ((Vg - Vo)/L)*DTs</p>
+
+<p>q=C2&#916;Vc q=1/2&#916;(iL) Ts/2 &#916;Vc = &#916;(iL) Ts/(8C)</p>
+
+<p>Boost Converter&rarr; M(D) = 1/D, Kcritical(D) =D( D&rsquo;)^2, step up converter 2&#916;(iL) = Vg/L *(DTs)</p>
+
+<p>&#916;Vc = V/(2RC)*(DTs)</p>
+
+<p>Buck-Boost Converter &rarr; M(D) = D/(D&rsquo;), Kcritical(D) = (D&rsquo;)^2 2&#916;(iL) = Vg/L *(DTs)</p>
+
+<p>&#916;Vc = -V/(2RC)*(DTs)</p>
+
+<p>--------------------------------------------------------------------------------------------------</p>
+
 <p>INVERTER: coverts DC power &rarr; (into) AC power at Vout VSI: Voltage Source Inverter DC input voltage is essentially constant, independent of Iload Inverter: specifies load voltage Drawn current shape: specified by load Feedback diode: operates for reactive load when the voltage and current are of opposite polarities</p>
 
 <p>Half-bridge, single phase &rarr; feedback diode</p>
@@ -90,35 +126,6 @@ title: "Simple Rabbit & Humble Hare"
 
 <p>SINGLE PHASE: only the nth harmonic can be eliminated (where cos(&frac12; n&#945;) = 0, ie. for &#945;=&#960;/n). Furthermore, for an even &ldquo;n&rdquo;, the nth harmonic is eliminated. On the other hand, for 3-phase, 3rd harmonic does not exist.</p>
 
-        <p>Converter Principles </p>
-        <p>Note: load is at outgoing branch, line is power source coming in </p>
-        <p>Load Regulation: capability to maintain a constant voltage/current at output despite any changes in load.</p>
-        <p>Line Regulation: capability to maintain a constant voltage/current at output despite any changes in input voltage.</p>
-        <p> Efficiency = Power Out/ Power In x 100%   = Power Out / (Power Out + Power Loss) x 100%</p>
-
-<p>KEY TERMS Switching Duty Cycle, D: ration of Ton/Toff &rarr; D in range [0, 1] D&rsquo; = 1-D fs, switching frequency = 1/Ts</p>
-
-<p>Small Ripple Approximation (SRA): typically, Vripple(t) << Voutput(t), hence we can treat output voltage as a DC component</p>
-
-<p>Inductor Volt-Second Balance: <VL> = 0 (change in inductor voltage) </p>
-<p>Capacitor Charge Balance (Amp-Second Balance): <iC> = 0 (change in capacitor current)</p>
-
-<p>For a periodic function, Xrms = sqrt(1/T* integral(0, T) {x(t)^2 dt})</p>
-
-<p>From Fourier analysis, the DC component = Average value Xavg = <x> = (1/T* integral(0, T) {x(t)^2 dt}</p>
-
-
-<p>Buck Converter&rarr; M(D) = D, Kcritical(D) = D&rsquo;, step down converter 2&#916;(iL) = ((Vg - Vo)/L)*DTs</p>
-
-<p>q=C2&#916;Vc q=1/2&#916;(iL) Ts/2 &#916;Vc = &#916;(iL) Ts/(8C)</p>
-
-<p>Boost Converter&rarr; M(D) = 1/D, Kcritical(D) =D( D&rsquo;)^2, step up converter 2&#916;(iL) = Vg/L *(DTs)</p>
-
-<p>&#916;Vc = V/(2RC)*(DTs)</p>
-
-<p>Buck-Boost Converter &rarr; M(D) = D/(D&rsquo;), Kcritical(D) = (D&rsquo;)^2 2&#916;(iL) = Vg/L *(DTs)</p>
-
-<p>&#916;Vc = -V/(2RC)*(DTs)</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 </div>
