@@ -187,6 +187,7 @@ h1 {
 }
 p {
     font-size: 1.5em;
+    font-family: 'Calibri', 'sans-serif'; 
     line-height: 1.4em;
     color: #333;
 }
@@ -194,12 +195,16 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
-
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
+    font-family: 'Lobster', 'serif' ;
 }
-
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type="text/css">
+<style>
 ul.posts li {
+    font-family: 'Lato','sans-serif'; 
     list-style: none;
 }
