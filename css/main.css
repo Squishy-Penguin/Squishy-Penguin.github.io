@@ -1,9 +1,11 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"><style>
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type="text/css"><style>
 
+
 body {
     margin: 60px auto;
     width: 70%;
+    background-color: #f0f5f4;
 }
 
 /*Background image settings*/
@@ -182,13 +184,14 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Lobster', 'serif' ;
 }
 p {
     font-size: 1.5em;
-    font-family: 'Calibri', 'sans-serif'; 
+    font-family: 'Lato','sans-serif'; 
     line-height: 1.4em;
     color: #333;
 }
