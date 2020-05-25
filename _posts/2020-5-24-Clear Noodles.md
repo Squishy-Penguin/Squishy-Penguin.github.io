@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Clear Noodles #1"
-date: 2020-04-19
+date: 2020-05-24
 ---
-# A Tasy Lunch - Clear Noodles #1
+# A Tasty Lunch - Clear Noodles #1
 ---
 Simple Rabbit said:
 > These noodles are chewy and a little sticky
