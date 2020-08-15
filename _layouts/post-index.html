@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html lang="en"> <!--This website content is in English-->
+		<head>
+			<title>{{ page.title }}</title>
+			<!--link to main javascript -->
+			<script type="text/javascript" src="/js/main.js"></script>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/post-index.css">
+		</head>
+		<body>
+			<!--Navigation links to topics-->
+			<nav>
+	    			<ul>
+	        			<li><a href="/">Home</a></li>                        
+	    			</ul>
+			</nav>
+			
+			<!-- /.container -->
+			<div class="container">
+			
+			{{ content }}
+			
+			</div>
+			
+			<!-- Site footer -->
+			<footer class ="footer-site">
+            			<ul class="footer-link">
+              				<li><a href="/">Home</a></li>                        
+	        	  		    <li><a href="/index">Index</a></li>
+        		  		    <li><a href="/about">About</a></li>
+        		  		    <li><a href="/contact">Contact</a></li>
+            			</ul>
+			</footer>
+		</body>
+	</html>
