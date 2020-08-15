@@ -155,7 +155,7 @@ ul.posts {
     font-family: 'Merienda', cursive;
 }
 
-ul.posts li {
+ul.posts li:nth-child(even) {
     display:block;
     padding: 25px 50px 25px;
     text-align: center;
