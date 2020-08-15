@@ -332,7 +332,7 @@ ul.posts li h0{
 .postBanner img {
   object-fit: cover;
   width: 100vw;
-  height: 50vh;
+  height: 75vh;
 }
 
 /*Banner image title*/
@@ -348,17 +348,16 @@ ul.posts li h0{
 
 .postTitle h1{
     padding: 25px 50px 25px;
-    font-size: 4em;
+    font-size: 30px;
     font-family: 'Overlock SC', cursive;
     color: black;
 }
 
 .postTitle h0{
     padding: 25px 50px 25px;
-    font-size: 2em;
+    font-size: 16px;
     font-family: 'Overlock SC', cursive;
     color: black;
-    margin: 8px;
 }
 
 
