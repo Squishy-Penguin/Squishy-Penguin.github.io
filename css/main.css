@@ -295,8 +295,8 @@ ul.posts li h0{
 .rabbitComment img{
     object-fit: cover;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 10em;
+    height: 10em;
     overflow:hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -347,15 +347,15 @@ ul.posts li h0{
 }
 /*top padding = 25px, right and left = 50px, bottom = 25px*/
 .postTitle h1{
-    padding: 15vh 20vw 15vh;
-    font-size: 60px;
+    padding: 8vh 15vw 8vh;
+    font-size: 4em;
     font-family: 'Overlock SC', cursive;
     color: black;
 }
 
 .postTitle h0{
-    padding: 15vh 20vw 2vh;
-    font-size: 16px;
+    padding: 1vh 20vw 2vh;
+    font-size: 2em;
     font-family: 'Overlock SC', cursive;
     color: black;
 }
