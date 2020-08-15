@@ -343,7 +343,7 @@ ul.posts li h0{
     padding: 0;
     position: absolute;
     bottom: 0px;
-    background-color:rgba(0,0,0,0.7);
+    background-color:rgba(255,255,255,0.7);
 }
 
 .postTitle h1{
@@ -355,7 +355,7 @@ ul.posts li h0{
 
 .postTitle h0{
     padding: 25px 50px 25px;
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Overlock SC', cursive;
     color: black;
 }
