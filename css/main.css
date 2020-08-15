@@ -1,16 +1,13 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin:0; 
     background-color: white;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Fonts---------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
-<style>
 /*Family: Lato, Lobster, Merienda, Overlock, Source Code Pro*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Merienda&family=Overlock+SC&family=Source+Code+Pro&display=swap');
-</style>
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Hero Image - front page-----------------------------------------------------------------*/
@@ -32,24 +29,21 @@ body {
   
   background-attachment: fixed;
   
+  text-align: center;
+  
   /*filter: brightness(60%); /* Or use "linear-gradient" for dark effect on the image*/
 }
 
 /* Place text in the middle of the image */
-.hero-content{
+/*.hero-content{
   position: relative; 
   font-family: 'Merienda', cursive;
   color: black;
   text-align: centre;
   margin: 0.625rem;
-}
+}*/
 
 .hero-title {
-  /*text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
   font-size: 5em;
   font-family: 'Merienda', cursive;
   font-weight: 600;
@@ -58,11 +52,9 @@ body {
 }
 
 .hero-subtitle {
-  
   font-size: 2em;
   font-family: 'Overlock SC', cursive;
   font-weight: 200;
-  
   margin-bottom: 0.5em;
 }
 
@@ -99,9 +91,6 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 .footer-site {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 5 px;
     background-color: #ebf2f1;
     border-top: 1px solid #d5d5d5;
     /*top padding = 25px, right and left = 50px, bottom = 25px*/
@@ -111,6 +100,9 @@ body {
 }
 
 .footer-site ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5 px;
     list-style: none;
     font-family: 'Lobster', cursive;
     text-transform:uppercase;
@@ -227,6 +219,11 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Content---------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
+
+.simple-container{
+    margin:60px auto;
+    width: 60%;
+}
 
 nav ul{
     font-family:'Lobster', 'serif';
