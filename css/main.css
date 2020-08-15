@@ -146,7 +146,7 @@ body {
 /*-------------------------Post Content----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 ul.posts { 
-    margin: 20px auto 40px; 
+    margin: 0; 
     display: grid;
     grid-template-columns: auto;
     grid-gap: 5 px;
@@ -161,6 +161,15 @@ ul.posts li {
     text-align: center;
     list-style: none;
     background:rgba(129,199,217,0.9);
+    color:#DEF5FA;
+}
+
+ul.posts li:nth-child(odd){
+    display:block;
+    padding: 25px 50px 25px;
+    text-align: center;
+    list-style: none;
+    background:rgba(34,122,144,0.9);
     color:#DEF5FA;
 }
 
