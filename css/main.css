@@ -347,14 +347,14 @@ ul.posts li h0{
 }
 
 .postTitle h1{
-    padding: 25px 50px 25px;
+    padding: 25px 50px 10px 25px;
     font-size: 60px;
     font-family: 'Overlock SC', cursive;
     color: black;
 }
 
 .postTitle h0{
-    padding: 25px 50px 25px;
+    padding: 25px 10px 25px;
     font-size: 16px;
     font-family: 'Overlock SC', cursive;
     color: black;
