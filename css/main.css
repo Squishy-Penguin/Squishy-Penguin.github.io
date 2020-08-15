@@ -6,8 +6,16 @@
 
 body {
     margin:0; 
-    background-color: white;
+    background-image: url(pawprint_bck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
 }
+
+/*body {
+    margin:0; 
+    background-color: white;
+}*/
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Hero Image - front page-----------------------------------------------------------------*/
@@ -136,83 +144,33 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Content---------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
-
-/*section*/
-.pawprint-bck{
-    width: 100vw;
-    height: 100vh; /*take up most of page*/
-  
-    display: flex;
-    justify-content: center;
-    align-items: center; /*use flexbox to align image*/
-    
-    background-image: url(pawprint_bck.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-}
-
-/*div*/
-.pawprint-content{
+ul.posts { 
+    margin: 20px auto 40px; 
     display: grid;
     grid-template-columns: auto;
     grid-gap: 5 px;
-    margin: 60px auto;
-    width: 70%;
-}
-
-.pawprint-button1{
-    display: block;
-    width: 500px;
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto; /*centred button*/
     
-    background-color:#81C7D9;
-    color:#DEF5FA;
-    font-family: 'Source Code Pro', monospace;
-}
-
-.pawprint-button1 h0{
-    font-size: 15px;
-    font-family: 'Source Code Pro', monospace;
-}
-
-.pawprint-button1 h1{
-    font-size: 4em;
+    font-size: 1.5em;
     font-family: 'Merienda', cursive;
 }
 
-.pawprint-button1:hover{
-    background-color:#165160;
-    color:#DEF5FA;
-}
-
-.pawprint-button2{
-    display: block;
-    width: 500px;
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto; /*centred button*/
-    
-    background-color:#227A90;
-    color:#DEF5FA;
-    font-family: 'Source Code Pro', monospace;
-}
-
-.pawprint-button2 h0{
+ul.posts li {
+    display:block;
+    text-align: center;
     font-size: 15px;
     font-family: 'Source Code Pro', monospace;
-}
-
-.pawprint-button2 h1{
-    font-size: 4em;
-    font-family: 'Merienda', cursive;
-}
-
-.pawprint-button2:hover{
-    background-color:#165160;
+    list-style: none;
+    background-color:rgba{129,199,217,0.5};
     color:#DEF5FA;
+}
+
+ul.posts li a{
+    font-family: 'Merienda', cursive;
+    font-size 500px;
+}
+
+ul.posts li a:hover{
+    background-color:#165160;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
@@ -342,17 +300,6 @@ a.linkregular:hover{
 a.linkregular:visited{
     text-decoration: none;
     color: #275201;    
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-    font-family: 'Lobster', cursive;
-}
-
-ul.posts li {
-    font-family: 'Lato', sans-serif;
-    list-style: none;
 }
 
 h1 {
