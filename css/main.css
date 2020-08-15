@@ -285,9 +285,10 @@ ul.posts li h0{
 /*-------------------------Post Content----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 .rabbitComment{
+    max-width: 80vw;
     padding: 25px 50px 25px;
     background-color: rgba(0,0,0,0);
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -342,7 +343,7 @@ ul.posts li h0{
     padding: 0;
     position: absolute;
     bottom: 0px;
-    background-color:rgba(255,255,255,0.7);
+    background-color:rgba(0,0,0,0.7);
 }
 
 .postTitle h1{
