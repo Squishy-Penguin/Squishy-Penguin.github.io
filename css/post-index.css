@@ -17,6 +17,88 @@ body {
     background-color: white;
 }*/
 
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Post Content----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+.rabbitComment{
+    padding: 25px 50px 25px;
+    background-color: rgba(0,0,0,0);
+    font-size: 1.5em;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.rabbitComment img{
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.rabbitComment p{
+    padding: 10px 10px 10px;
+    position: relative;
+    background-color: white;
+    
+    border-radius: 10px;
+    box-shadow:	0 2px 8px rgba(0, 0, 0, .4), 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+ul.posts { 
+    margin: 0; 
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5 px;
+    
+    font-size: 1.5em;
+    font-family: 'Merienda', cursive;
+}
+
+ul.posts li:nth-child(even) {
+    margin-left: 0;
+    text-indent: -1em;
+    display:block;
+    padding: 25px 50px 25px;
+    text-align: center;
+    list-style: none;
+    background:rgba(129,199,217,0.9);
+    color:#DEF5FA;
+}
+
+ul.posts li:nth-child(odd){
+    margin-left: 0;
+    text-indent: -1em;
+    display:block;
+    padding: 25px 50px 25px;
+    text-align: center;
+    list-style: none;
+    background:rgba(34,122,144,0.9);
+    color:#DEF5FA;
+}
+
+ul.posts li:hover {
+    display:block;
+    text-align: center;
+    list-style: none;
+    background:#165160;
+    color:#DEF5FA;
+}
+
+ul.posts li a{
+    font-family: 'Merienda', cursive;
+    font-size 30px;
+    color:#DEF5FA;
+}
+
+ul.posts li a:hover{
+    background:#165160;
+    color:#DEF5FA;
+}
+
+ul.posts li h0{
+    font-size: 15px;
+    font-family: 'Overlock SC', cursive;
+    color:#DEF5FA;
+}
+
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Post Image------------------------------------------------------------------------------*/
@@ -34,6 +116,11 @@ body {
     align-items: center; /*use flexbox to align image*/
 
     position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
+}
+
+.postBanner img {
+  width: 100%;
+  height: auto;
 }
 
 /*Banner image title*/
@@ -58,39 +145,15 @@ body {
     color: black;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
-
 /*-----------------------------------------------------------------------------------------------------------------*/
-/*-------------------------Header----------------------------------------------------------------------------------*/
+/*-------------------------Page Header-----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
-.header-site{
-    margin: 0; 
-    padding: 0;
-    height: 100px;
-    background-color: #ebf2f1;
-    border-top: 1px solid #d5d5d5;
-    /*top padding = 25px, right and left = 50px, bottom = 25px*/
-    padding: 25px 50px 25px;
-}
-
-.header-site h1{
-    text-align: center;
-    line-height: 100px;
-    font-family: 'Merienda', cursive;
-    font-size:50px;
-    color:white;
-}
-
 nav{
     margin: 0;
     padding: 0;
     height: 60px;
     width: 100vw;
-    position: fixed;
+    position: scroll;
     background:rgba(255,255,255,0.7);
     text-align:center;
 }
@@ -184,80 +247,4 @@ nav ul li a:active{
 .footer-link a:hover{
     color: rgba(71,153,182,1);
     text-decoration: none;
-}
-
-/*-----------------------------------------------------------------------------------------------------------------*/
-/*-------------------------Post Index----------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------------------------*/
-ul.posts { 
-    margin: 0; 
-    padding: 0;
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 5 px;
-    
-    font-size: 1.5em;
-    font-family: 'Merienda', cursive;
-}
-
-ul.posts li:nth-child(even) {
-    margin-left: 0;
-    text-indent: -1em;
-    display:block;
-    padding: 25px 50px 25px;
-    text-align: center;
-    list-style: none;
-    background:rgba(129,199,217,0.9);
-    color:#DEF5FA;
-}
-
-ul.posts li:nth-child(odd){
-    margin-left: 0;
-    text-indent: -1em;
-    display:block;
-    padding: 25px 50px 25px;
-    text-align: center;
-    list-style: none;
-    background:rgba(34,122,144,0.9);
-    color:#DEF5FA;
-}
-
-ul.posts li:hover {
-    display:block;
-    text-align: center;
-    list-style: none;
-    background:#165160;
-    color:#DEF5FA;
-}
-
-ul.posts li a{
-    font-family: 'Merienda', cursive;
-    font-size 30px;
-    color:#DEF5FA;
-}
-
-ul.posts li a:hover{
-    background:#165160;
-    color:#DEF5FA;
-}
-
-ul.posts li h0{
-    font-size: 15px;
-    font-family: 'Overlock SC', cursive;
-    color:#DEF5FA;
-}
-
-
-/*-----------------------------------------------------------------------------------------------------------------*/
-/*-------------------------Banner---------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------------------------*/
-
-/*Banner image:*/
-.picture1 {
-   width:100px;
-   height:100px; 
-   background-image: url(almost%20winter.png);
-   
-   margin:0; /* If you want no margin */
-   padding:0; /*if your want padding */
 }
