@@ -159,8 +159,6 @@ ul.posts li {
     display:block;
     padding: 25px 50px 25px;
     text-align: center;
-    font-size: 15px;
-    font-family: 'Source Code Pro', monospace;
     list-style: none;
     background:rgba(129,199,217,0.9);
     color:#DEF5FA;
