@@ -111,6 +111,7 @@ body {
 
 .header-site h1{
     text-align: center;
+    line-height: 50px;
     font-family: 'Merienda', cursive;
     font-size:50px;
     color:white;
@@ -157,12 +158,12 @@ nav ul li:hover{
 }
 
 nav ul li a{
-    color:#383838;
+    color: rgba(71,153,182,1);
     text-decoration:none;
 }
 
 nav ul li a:active{
-    color:#DEF5FA;
+    color: rgba(71,153,182,1);
     text-decoration:none;
 }
 
