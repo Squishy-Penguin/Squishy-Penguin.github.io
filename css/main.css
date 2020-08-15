@@ -137,6 +137,8 @@ nav ul{
 }
 
 nav ul li{
+    height: 60px;
+    
     text-align: center;
     text-indent: -1em;
     display: inline;
@@ -155,6 +157,11 @@ nav ul li:hover{
 
 nav ul li a{
     color:#383838;
+    text-decoration:none;
+}
+
+nav ul li a:active{
+    color:#DEF5FA;
     text-decoration:none;
 }
 
