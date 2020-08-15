@@ -1,0 +1,250 @@
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Fonts---------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Family: Lato, Lobster, Merienda, Overlock, Source Code Pro*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Merienda&family=Overlock+SC&family=Source+Code+Pro&display=swap');
+
+body {
+    margin:0; 
+    background-image: url(pawprint_bck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+/*body {
+    margin:0; 
+    background-color: white;
+}*/
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Post Content----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+.rabbitComment{
+    padding: 25px 50px 25px;
+    background-color: rgba(0,0,0,0);
+    font-size: 1.5em;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.rabbitComment img{
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.rabbitComment p{
+    padding: 10px 10px 10px;
+    position: relative;
+    background-color: white;
+    
+    border-radius: 10px;
+    box-shadow:	0 2px 8px rgba(0, 0, 0, .4), 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+ul.posts { 
+    margin: 0; 
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5 px;
+    
+    font-size: 1.5em;
+    font-family: 'Merienda', cursive;
+}
+
+ul.posts li:nth-child(even) {
+    margin-left: 0;
+    text-indent: -1em;
+    display:block;
+    padding: 25px 50px 25px;
+    text-align: center;
+    list-style: none;
+    background:rgba(129,199,217,0.9);
+    color:#DEF5FA;
+}
+
+ul.posts li:nth-child(odd){
+    margin-left: 0;
+    text-indent: -1em;
+    display:block;
+    padding: 25px 50px 25px;
+    text-align: center;
+    list-style: none;
+    background:rgba(34,122,144,0.9);
+    color:#DEF5FA;
+}
+
+ul.posts li:hover {
+    display:block;
+    text-align: center;
+    list-style: none;
+    background:#165160;
+    color:#DEF5FA;
+}
+
+ul.posts li a{
+    font-family: 'Merienda', cursive;
+    font-size 30px;
+    color:#DEF5FA;
+}
+
+ul.posts li a:hover{
+    background:#165160;
+    color:#DEF5FA;
+}
+
+ul.posts li h0{
+    font-size: 15px;
+    font-family: 'Overlock SC', cursive;
+    color:#DEF5FA;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Post Image------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Banner image settings*/
+.postBanner{
+    width: 100vw;
+    height: 50vh; 
+    background-color: #464646;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center; /*use flexbox to align image*/
+
+    position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
+}
+
+.postBanner img {
+  width: 100%;
+  height: auto;
+}
+
+/*Banner image title*/
+.postTitle{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 8px;
+    background-color:rgba(0,0,0,0.7);
+}
+
+.postTitle h1{
+    font-size: 2em;
+    font-family: 'Overlock SC', cursive;
+    color: black;
+}
+
+.postTitle h0{
+    font-size: 1em;
+    font-family: 'Overlock SC', cursive;
+    color: black;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Page Header-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+nav{
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 100vw;
+    position: scroll;
+    background:rgba(255,255,255,0.7);
+    text-align:center;
+}
+
+nav ul{
+    margin-left: 0;
+    list-style: none;
+    text-align:center;
+    text-indent: -1em;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 0 px;
+    list-style: none;
+}
+
+nav ul li{    
+    text-align: center;
+    text-indent: -1em;
+    display: inline;
+    margin-right: 20px;
+    
+    font-family: 'Overlock SC', cursive;
+    font-size:20px;    
+    font-weight: bold;
+    text-transform:uppercase;
+    color:#383838;
+}
+
+nav ul li:hover{
+    color: rgba(71,153,182,1);
+}
+
+nav ul li a{
+    color:#383838;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color: rgba(71,153,182,1);
+    text-decoration:none;
+}
+
+nav ul li a:active{
+    color: rgba(71,153,182,1);
+    text-decoration:none;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Footer---------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.footer-site {
+    background-color: #ebf2f1;
+    border-top: 1px solid #d5d5d5;
+    /*top padding = 25px, right and left = 50px, bottom = 25px*/
+    padding: 25px 50px 25px;
+    font-size: 15px;
+    color:#383838;
+}
+
+.footer-site ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5 px;
+    list-style: none;
+    font-family: 'Lobster', cursive;
+    text-transform:uppercase;
+    color:#383838;
+}
+
+.footer-site ul li{
+    display:block;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    text-transform:uppercase;
+    color: black;
+}
+
+.footer-link{
+    padding-left:0;
+}
+
+.footer-link a{
+    color:rgba(25,53,64,1);
+    font-family: 'Lobster', cursive;
+    text-transform:uppercase;
+    text-decoration: none;
+}
+
+.footer-link a:hover{
+    color: rgba(71,153,182,1);
+    text-decoration: none;
+}
