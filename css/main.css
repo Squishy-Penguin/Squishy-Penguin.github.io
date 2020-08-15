@@ -146,7 +146,7 @@ body {
 /*-------------------------Header----------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 
-header{
+.header-site{
     background-color: #ebf2f1;
     border-top: 1px solid #d5d5d5;
     /*top padding = 25px, right and left = 50px, bottom = 25px*/
@@ -154,23 +154,37 @@ header{
     color:white;
 }
 
-header title{
+.header-site title{
     text-align: center;
-    font-size:200px;
     font-family: 'Merienda', cursive;
+    font-size:300px;
 }
 
 nav ul{
-    font-family:'Lobster', 'serif';
-    padding: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 5 px;
     list-style: none;
+    position: fixed;
+
+    font-family: 'Overlock SC', cursive;
+    font-size:200px;
+    
     font-weight: bold;
+    text-transform:uppercase;
+    color:#383838;
+    background:rgba(255,255,255,0.7);
 }
+
 nav ul li{
+    text-align: center;
     display: inline;
     margin-right: 20px;
 }
 
+nav ul li:hover{
+    background:rgba(255,255,255,1);
+}
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Post Index----------------------------------------------------------------------------*/
@@ -329,23 +343,23 @@ ul.posts li h0{
 
 /*Formatting links:*/
 a.linkbutton:link, a.linkbutton:visited {
-    font-family: 'Lobster', cursive;
+    font-family: 'Merienda', cursive;
     color: #015249;
 }
 a.linkbutton:hover a.linkbutton:active {
-    font-family: 'Lobster', cursive;
+    font-family: 'Merienda', cursive;
     color: #fff;
     background: #015249;
 }
 
 a.linkregular: link{
-    font-family: 'Lobster', cursive;
+    font-family: 'Merienda', cursive;
     color: #015249;    
 }
 
 a.linkregular:hover{
     color: #015249;
-    font-family: 'Lobster', cursive;
+    font-family: 'Merienda', cursive;
     text-decoration: underline;
 }
 a.linkregular:visited{
@@ -355,8 +369,7 @@ a.linkregular:visited{
 
 h1 {
     font-size: 3em;
-    font-family: 'Lobster', cursive;
-}
+    font-family: 'Merienda', cursive;
 p {
     font-size: 1.5em;
     font-family: 'Lato', sans-serif;
