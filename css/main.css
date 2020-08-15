@@ -127,6 +127,7 @@ nav{
 }
 
 nav ul{
+    list-style: none;
     text-align:center;
     text-indent: -1em;
     display: grid;
@@ -387,8 +388,10 @@ a.linkregular:visited{
 }
 
 h1 {
-    font-size: 3em;
-    font-family: 'Merienda', cursive;
+  font-size: 2em;
+  font-family: 'Overlock SC', cursive;
+}
+
 p {
     font-size: 1.5em;
     font-family: 'Lato', sans-serif;
