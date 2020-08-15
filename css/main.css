@@ -143,7 +143,37 @@ body {
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
-/*-------------------------Post Content----------------------------------------------------------------------------*/
+/*-------------------------Header----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+header{
+    background-color: #ebf2f1;
+    border-top: 1px solid #d5d5d5;
+    /*top padding = 25px, right and left = 50px, bottom = 25px*/
+    padding: 25px 50px 25px;
+    color:white;
+}
+
+header title{
+    text-align: center;
+    font-size:200px;
+    font-family: 'Merienda', cursive;
+}
+
+nav ul{
+    font-family:'Lobster', 'serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Post Index----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 ul.posts { 
     margin: 0; 
@@ -186,13 +216,6 @@ ul.posts li:hover {
     color:#DEF5FA;
 }
 
-ul.posts li h0{
-    font-size: 15px;
-    font-family: 'Source Code Pro', monospace;
-    color:#DEF5FA;
-}
-
-
 ul.posts li a{
     font-family: 'Merienda', cursive;
     font-size 500px;
@@ -203,6 +226,13 @@ ul.posts li a:hover{
     background:#165160;
     color:#DEF5FA;
 }
+
+ul.posts li h0{
+    font-size: 15px;
+    font-family: 'Overlock SC', cursive;
+    color:#DEF5FA;
+}
+
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Banner---------------------------------------------------------------------------------*/
@@ -217,6 +247,7 @@ ul.posts li a:hover{
    margin:0; /* If you want no margin */
    padding:0; /*if your want padding */
 }
+
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------SIDEBAR---------------------------------------------------------------------------------*/
@@ -294,17 +325,6 @@ ul.posts li a:hover{
 .simple-container{
     margin:60px auto;
     width: 70%;
-}
-
-nav ul{
-    font-family:'Lobster', 'serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li{
-    display: inline;
-    margin-right: 20px;
 }
 
 /*Formatting links:*/
