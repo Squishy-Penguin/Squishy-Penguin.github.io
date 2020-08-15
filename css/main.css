@@ -292,9 +292,10 @@ ul.posts li h0{
 }
 
 .rabbitComment img{
+    object-fit: cover;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     overflow:hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -328,9 +329,9 @@ ul.posts li h0{
 }
 
 .postBanner img {
+  object-fit: cover;
   width: 100vw;
   height: 50vh;
-  overflow:hidden;
 }
 
 /*Banner image title*/
