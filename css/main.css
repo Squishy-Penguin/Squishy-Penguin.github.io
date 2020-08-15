@@ -128,18 +128,19 @@ nav{
 }
 
 nav ul{
+    line-height: 50;
+    text-align:center;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-gap: 5 px;
     list-style: none;
-    text-align:center;
 }
 
 nav ul li{
     text-align: center;
     display: inline;
     margin-right: 20px;
-    line-height: 50;
+    
     font-family: 'Overlock SC', cursive;
     font-size:20px;    
     font-weight: bold;
@@ -149,6 +150,11 @@ nav ul li{
 
 nav ul li:hover{
     background:rgba(255,255,255,1);
+}
+
+nav ul li a{
+    color:#383838;
+    text-decoration:none;
 }
 
 
