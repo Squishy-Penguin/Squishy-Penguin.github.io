@@ -1,6 +1,6 @@
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 100%;
     background-color: white;
 }
 
@@ -8,6 +8,7 @@ body {
 /*-------------------------Fonts---------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 <style>
+/*Family: Lato, Lobster, Merienda, Overlock, Source Code Pro*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Merienda&family=Overlock+SC&family=Source+Code+Pro&display=swap');
 </style>
 
@@ -98,6 +99,9 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 .footer-site {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5 px;
     background-color: #ebf2f1;
     border-top: 1px solid #d5d5d5;
     /*top padding = 25px, right and left = 50px, bottom = 25px*/
@@ -113,6 +117,8 @@ body {
 }
 
 .footer-site ul li{
+    display:block;
+    text-align: center;
     font-family: 'Lobster', cursive;
     text-transform:uppercase;
     color: black;
