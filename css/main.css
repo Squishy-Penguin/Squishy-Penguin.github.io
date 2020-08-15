@@ -160,17 +160,19 @@ ul.posts li {
     font-size: 15px;
     font-family: 'Source Code Pro', monospace;
     list-style: none;
-    background-color:rgba{129,199,217,0.5};
+    background:rgba{129,199,217,0.5};
     color:#DEF5FA;
 }
 
 ul.posts li a{
     font-family: 'Merienda', cursive;
     font-size 500px;
+    color:#DEF5FA;
 }
 
 ul.posts li a:hover{
-    background-color:#165160;
+    background:#165160;
+    color:#DEF5FA;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
