@@ -21,8 +21,8 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Post Image------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
-/*Start: Banner image settings*/
-div.postBanner{
+/*Banner image settings*/
+.postBanner{
     width: 100vw;
     height: 50vh; 
     background-color: #464646;
@@ -36,43 +36,32 @@ div.postBanner{
     position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
 }
 
-div.bottomLeft{
-    width:
+/*Banner image title*/
+.postTitle{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 8px;
+    background-color:rgba(0,0,0,0.7);
 }
 
-.bottomleft {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  font-size: 18px;
+.postTitle h1{
+    font-size: 2em;
+    font-family: 'Overlock SC', cursive;
+    color: black;
+}
+
+.postTitle h0{
+    font-size: 1em;
+    font-family: 'Overlock SC', cursive;
+    color: black;
 }
 
 img {
   width: 100%;
   height: auto;
 }
-
-  width: 100vw;
-  height: 50vh; 
-  
-  display: flex;
-  justify-content: center;
-  align-items: center; /*use flexbox to align image*/
-
-  position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(banner1.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  background-attachment: scroll;
-  
-  text-align: center;
-  
-  /*filter: brightness(60%); /* Or use "linear-gradient" for dark effect on the image*/
-}
-
-
 
 
 /*-----------------------------------------------------------------------------------------------------------------*/
