@@ -147,6 +147,7 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------*/
 ul.posts { 
     margin: 0; 
+    padding: 0;
     display: grid;
     grid-template-columns: auto;
     grid-gap: 5 px;
