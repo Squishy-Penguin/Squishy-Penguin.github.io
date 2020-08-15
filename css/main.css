@@ -107,14 +107,13 @@ body {
     border-top: 1px solid #d5d5d5;
     /*top padding = 25px, right and left = 50px, bottom = 25px*/
     padding: 25px 50px 25px;
-    color:blue;
 }
 
 .header-site h1{
     text-align: center;
     font-family: 'Merienda', cursive;
     font-size:50px;
-    color:blue;
+    color:white;
 }
 
 nav{
