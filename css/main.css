@@ -77,15 +77,17 @@ body {
   /*text*/
   color: black; 
   font-family: 'Source Code Pro', monospace;
-  font-size: 1.5em
+  font-size: 1.5em;
   
   /*border*/
   border: 3px solid black;
-  border-radius: 20px /*rounded button*/   
+  /*rounded button*/  
+  border-radius: 20px;
   
 }
 
-.hero-button:hover { /*change background color of button when cursor hovers over it*/
+/*change background color of button when cursor hovers over it*/
+.hero-button:hover{
   background-color: black;
   border: 3px solid white;
   color: white;
@@ -102,6 +104,18 @@ body {
     padding: 25px 50px 25px;
     font-size: 15px;
     color:#383838;
+}
+
+.footer ul{
+    font-family: 'Lobster', cursive;
+    text-transform:uppercase;
+    color:#383838;
+}
+
+.footer ul li{
+    font-family: 'Lobster', cursive;
+    text-transform:uppercase;
+    color: black;
 }
 
 .footer-link{
@@ -204,35 +218,36 @@ body {
 /*-------------------------Content---------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 
-nav ul, footer ul {
+nav ul{
     font-family:'Lobster', 'serif' ;
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+nav ul li{
     display: inline;
     margin-right: 20px;
 }
 
 /*Formatting links:*/
 a.linkbutton:link, a.linkbutton:visited {
-    text-decoration: none;
+    font-family: 'Lobster', cursive;
     color: #015249;
 }
 a.linkbutton:hover a.linkbutton:active {
-    text-decoration: none;
+    font-family: 'Lobster', cursive;
     color: #fff;
     background: #015249;
 }
 
 a.linkregular: link{
-    text-decoration: none;
+    font-family: 'Lobster', cursive;
     color: #015249;    
 }
 
 a.linkregular:hover{
     color: #015249;
+    font-family: 'Lobster', cursive;
     text-decoration: underline;
 }
 a.linkregular:visited{
