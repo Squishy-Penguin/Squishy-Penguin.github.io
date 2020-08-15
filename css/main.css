@@ -142,7 +142,7 @@ body {
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
-/*-------------------------Content---------------------------------------------------------------------------------*/
+/*-------------------------Post Content----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 ul.posts { 
     margin: 20px auto 40px; 
@@ -156,6 +156,7 @@ ul.posts {
 
 ul.posts li {
     display:block;
+    padding: 25px 50px 25px;
     text-align: center;
     font-size: 15px;
     font-family: 'Source Code Pro', monospace;
@@ -163,6 +164,21 @@ ul.posts li {
     background:rgba{129,199,217,0.5};
     color:#DEF5FA;
 }
+
+ul.posts li:hover {
+    display:block;
+    text-align: center;
+    list-style: none;
+    background:#165160;
+    color:#DEF5FA;
+}
+
+ul.posts li span{
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+    color:#DEF5FA;
+}
+
 
 ul.posts li a{
     font-family: 'Merienda', cursive;
