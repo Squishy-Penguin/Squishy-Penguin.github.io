@@ -118,16 +118,16 @@ body {
 }
 
 nav{
+    margin: 0;
+    padding: 0;
     height: 60px;
     width: 100vh;
     position: fixed;
     background:rgba(255,255,255,0.7);
+    text-align:center;
 }
 
 nav ul{
-    margin: auto;
-    padding: 25px 50px 25px;
-    
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-gap: 5 px;
