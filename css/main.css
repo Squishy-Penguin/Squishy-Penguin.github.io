@@ -316,7 +316,7 @@ ul.posts li h0{
 /*Banner image settings*/
 .postBanner{
     width: 100vw;
-    height: 50vh; 
+    height: 75vh; 
     background-color: #464646;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
@@ -342,21 +342,22 @@ ul.posts li h0{
     padding: 0;
     position: absolute;
     bottom: 0px;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(255,255,255,0.7);
 }
 
 .postTitle h1{
     padding: 25px 50px 25px;
-    font-size: 3em;
+    font-size: 4em;
     font-family: 'Overlock SC', cursive;
     color: black;
 }
 
 .postTitle h0{
     padding: 25px 50px 25px;
-    font-size: 1em;
+    font-size: 2em;
     font-family: 'Overlock SC', cursive;
     color: black;
+    margin: 8px;
 }
 
 
