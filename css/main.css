@@ -23,8 +23,9 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*Start: Banner image settings*/
 .hero {
+  /*take up most of page*/
   width: 100vw;
-  height: 100vh; /*take up most of page*/
+  height: 100vh; 
   
   display: flex;
   justify-content: center;
@@ -117,8 +118,12 @@ body {
 }
 
 nav ul{
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: 25px 50px 25px;
+    
+    width: 60px;
+    height: 100vh;
+    
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-gap: 5 px;
@@ -131,6 +136,7 @@ nav ul li{
     text-align: center;
     display: inline;
     margin-right: 20px;
+    line-height: 50
     font-family: 'Overlock SC', cursive;
     font-size:20px;    
     font-weight: bold;
