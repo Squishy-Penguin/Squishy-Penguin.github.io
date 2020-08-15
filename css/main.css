@@ -293,8 +293,8 @@ ul.posts li h0{
 
 .rabbitComment img{
     border-radius: 50%;
-    max-width: 50px;
-    max-height: 50px;
+    width: 70px;
+    height: 70px;
     overflow:hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -328,19 +328,20 @@ ul.posts li h0{
 }
 
 .postBanner img {
-  width: 100%;
+  width: 100vw;
   height: 50vh;
   overflow:hidden;
 }
 
 /*Banner image title*/
 .postTitle{
-    width: 100%;
+    width: 100vw;
+    height: 30vh;
     margin: 0;
     padding: 0;
     position: absolute;
-    bottom: 8px;
-    background-color:rgba(0,0,0,0.7);
+    bottom: 0px;
+    background-color:rgba(0,0,0,0.5);
 }
 
 .postTitle h1{
