@@ -1,0 +1,169 @@
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Fonts---------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Family: Lato, Lobster, Merienda, Overlock, Source Code Pro*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Merienda&family=Overlock+SC&family=Source+Code+Pro&display=swap');
+
+body {
+    margin:0; 
+    background-image: url(pawprint_bck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Footer---------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.footer-site {
+    background-color: #ebf2f1;
+    border-top: 1px solid #d5d5d5;
+    /*top padding = 25px, right and left = 50px, bottom = 25px*/
+    padding: 25px 50px 25px;
+    font-size: 15px;
+    color:#383838;
+}
+
+.footer-site ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5 px;
+    list-style: none;
+    font-family: 'Lobster', cursive;
+    text-transform:uppercase;
+    color:#383838;
+}
+
+.footer-site ul li{
+    display:block;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    text-transform:uppercase;
+    color: black;
+}
+
+.footer-link{
+    padding-left:0;
+}
+
+.footer-link a{
+    color:rgba(25,53,64,1);
+    font-family: 'Lobster', cursive;
+    text-transform:uppercase;
+    text-decoration: none;
+}
+
+.footer-link a:hover{
+    color: rgba(71,153,182,1);
+    text-decoration: none;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Content---------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/*section*/
+.pawprint{
+    width: 100vw;
+    height: 100vh; /*take up most of page*/
+  
+    display: flex;
+    justify-content: center;
+    align-items: center; /*use flexbox to align image*/
+}
+
+/*div*/
+.pawprint-content{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5 px;
+    margin: 60px auto;
+    width: 70%;
+}
+
+.pawprint-button1{
+    display: block;
+    width: 500px;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto; /*centred button*/
+    
+    background-color:rgba{129,199,217,0.5};
+    color:#DEF5FA;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.pawprint-button1 h0{
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.pawprint-button1 h1{
+    font-size: 4em;
+    font-family: 'Merienda', cursive;
+}
+
+.pawprint-button1:hover{
+    background-color:#165160;
+    color:#DEF5FA;
+}
+
+.pawprint-button2{
+    display: block;
+    width: 500px;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto; /*centred button*/
+    
+    background-color:rgba{34,122,144,0.5};
+    color:#DEF5FA;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.pawprint-button2 h0{
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.pawprint-button2 h1{
+    font-size: 4em;
+    font-family: 'Merienda', cursive;
+}
+
+.pawprint-button2:hover{
+    background-color:#165160;
+    color:#DEF5FA;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Placeholder Content---------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.simple-container{
+    margin:60px auto;
+    width: 70%;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+}
+
+ul.posts li {
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: 'Merienda', cursive;
+    line-height: 1.4em;
+    color:#DEF5FA;
+}
