@@ -156,6 +156,7 @@ ul.posts {
 }
 
 ul.posts li:nth-child(even) {
+    margin: 0;
     display:block;
     padding: 25px 50px 25px;
     text-align: center;
