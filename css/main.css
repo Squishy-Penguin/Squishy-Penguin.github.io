@@ -111,6 +111,7 @@ body {
 }
 
 .footer-site ul{
+    list-style: none;
     font-family: 'Lobster', cursive;
     text-transform:uppercase;
     color:#383838;
@@ -132,10 +133,13 @@ body {
     color:rgba(25,53,64,1);
     font-family: 'Lobster', cursive;
     text-transform:uppercase;
+    text-decoration: none;
 }
 
 .footer-link a:hover{
     color: rgba(71,153,182,1);
+    text-decoration: none;
+}
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Banner---------------------------------------------------------------------------------*/
