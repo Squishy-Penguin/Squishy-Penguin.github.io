@@ -97,7 +97,7 @@ body {
 /*-------------------------Footer---------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 
-.footer {
+footer {
     background-color: #ebf2f1;
     border-top: 1px solid #d5d5d5;
     /*top padding = 25px, right and left = 50px, bottom = 25px*/
@@ -106,13 +106,13 @@ body {
     color:#383838;
 }
 
-.footer ul{
+footer ul{
     font-family: 'Lobster', cursive;
     text-transform:uppercase;
     color:#383838;
 }
 
-.footer ul li{
+footer ul li{
     font-family: 'Lobster', cursive;
     text-transform:uppercase;
     color: black;
