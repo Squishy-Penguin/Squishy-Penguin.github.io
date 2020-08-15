@@ -290,12 +290,15 @@ ul.posts li h0{
     background-color: rgba(0,0,0,0);
     font-size: 18px;
     font-family: 'Source Code Pro', monospace;
-}
-
-.rabbitComment img{
+ 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.rabbitComment img{
+    margin-left: auto;
+    margin-right: auto;
     
     object-fit: cover;
     border-radius: 50%;
@@ -306,9 +309,7 @@ ul.posts li h0{
 }
 
 .rabbitComment p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     
     padding: 10px 10px 10px;
     position: relative;
