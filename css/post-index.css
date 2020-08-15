@@ -63,6 +63,35 @@ body {
 /*-------------------------Content---------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 
+ul.posts { 
+    margin: 20px auto 40px; 
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5 px;
+    
+    font-size: 1.5em;
+    font-family: 'Merienda', cursive;
+}
+
+ul.posts li {
+    display:block;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+    list-style: none;
+    background-color:rgba{129,199,217,0.5};
+    color:#DEF5FA;
+}
+
+ul.posts li a{
+    font-family: 'Merienda', cursive;
+    font-size 500px;
+}
+
+ul.posts li a:hover{
+    background-color:#165160;
+}
+
 /*section*/
 .pawprint{
     width: 100vw;
@@ -143,17 +172,6 @@ body {
 .simple-container{
     margin:60px auto;
     width: 70%;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-    font-family: 'Lobster', cursive;
-}
-
-ul.posts li {
-    font-family: 'Lato', sans-serif;
-    list-style: none;
 }
 
 h1 {
