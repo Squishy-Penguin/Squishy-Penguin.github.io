@@ -128,7 +128,6 @@ nav{
 }
 
 nav ul{
-    line-height: 50;
     text-align:center;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
