@@ -326,7 +326,7 @@ ul.posts li h0{
 
 .postBanner img {
   width: 100%;
-  height: auto;
+  height: 50vh;
 }
 
 /*Banner image title*/
@@ -340,12 +340,14 @@ ul.posts li h0{
 }
 
 .postTitle h1{
-    font-size: 2em;
+    padding: 25px 50px 25px;
+    font-size: 3em;
     font-family: 'Overlock SC', cursive;
     color: black;
 }
 
 .postTitle h0{
+    padding: 25px 50px 25px;
     font-size: 1em;
     font-family: 'Overlock SC', cursive;
     color: black;
