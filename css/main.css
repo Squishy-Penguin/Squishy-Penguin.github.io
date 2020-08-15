@@ -4,18 +4,18 @@
 /*Family: Lato, Lobster, Merienda, Overlock, Source Code Pro*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Merienda&family=Overlock+SC&family=Source+Code+Pro&display=swap');
 
-body {
+/*body {
     margin:0; 
     background-image: url(pawprint_bck.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-}
+}*/
 
-/*body {
+body {
     margin:0; 
     background-color: white;
-}*/
+
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Hero Image - front page-----------------------------------------------------------------*/
@@ -173,7 +173,7 @@ ul.posts li:hover {
     color:#DEF5FA;
 }
 
-ul.posts li span{
+ul.posts li h0{
     font-size: 15px;
     font-family: 'Source Code Pro', monospace;
     color:#DEF5FA;
