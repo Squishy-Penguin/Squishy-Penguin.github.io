@@ -103,6 +103,7 @@ body {
 .header-site{
     margin: 0; 
     padding: 0;
+    height: 100px;
     background-color: #ebf2f1;
     border-top: 1px solid #d5d5d5;
     /*top padding = 25px, right and left = 50px, bottom = 25px*/
@@ -111,7 +112,7 @@ body {
 
 .header-site h1{
     text-align: center;
-    line-height: 50px;
+    line-height: 100px;
     font-family: 'Merienda', cursive;
     font-size:50px;
     color:white;
@@ -138,9 +139,7 @@ nav ul{
     list-style: none;
 }
 
-nav ul li{
-    height: 60px;
-    
+nav ul li{    
     text-align: center;
     text-indent: -1em;
     display: inline;
@@ -159,6 +158,11 @@ nav ul li:hover{
 
 nav ul li a{
     color:#383838;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color: rgba(71,153,182,1);
     text-decoration:none;
 }
 
