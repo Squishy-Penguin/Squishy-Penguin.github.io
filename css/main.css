@@ -243,19 +243,18 @@ nav ul li a:active{
 /*Box title*/
 .detailsPages h1{
 	text-align: left;
-	font-size: 3rem;
+	font-size: 4rem;
 	font-family:'Merienda',cursive;
 }
 
 .summaryTransparent{
 	outline: none;
-	font-size: 1.8rem;
+	font-size: 2rem;
 	font-family: 'Merienda', cursive;
 }
 
 /*Within the summary:*/
 .detailsContent{
-	font-size: 1.5rem;
 	padding: 25px 50px 25px;
 	font-family: 'Source Code Pro', monospace;
 }
@@ -267,8 +266,9 @@ nav ul li a:active{
 	color: rgba(15,111,198,1);
 	text-align: left;
 
-	font-size: 1.8rem;
+	font-size: 2rem;
 	font-family: 'Overlock SC', cursive;
+	font-weight: bold;
 }
 
 .detailsContent ul a{
@@ -276,7 +276,7 @@ nav ul li a:active{
 	color:black;
 	text-decoration: none;
 	
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	font-family: 'Overlock SC', cursive;
 }
 
@@ -285,7 +285,7 @@ nav ul li a:active{
 }
 
 .detailsContent p{
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-family: 'Source Code Pro', monospace;
 }
 
