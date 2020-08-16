@@ -1,5 +1,5 @@
 ---
-title: "Breakfast #1"
+title: "Oatmeal Breakfast #1"
 date: 2020-04-19
 language: English
 creator: Simple Rabbit
@@ -8,7 +8,7 @@ creator: Simple Rabbit
 <link rel="stylesheet" type="text/css" media="all" href="post-index.css" />
 
 <div class ="postBanner">
-  <img src="/../../../images/posts/breakfast1.jpg" alt="Yogurt Oatmeal Kiwi">
+  <img src="/../../../images/posts/breakfast1.jpg" alt="Kiwi and Oatmeal with Yogurt">
   <div class ="postTitle">
      <h1>A Sweet Breakfast - Yogurt, Oatmeal, and Kiwi</h1>
      <h0> | April 19 2020</h0>
