@@ -659,6 +659,7 @@ ul {
 }
 
 li {
+  display: list-item;
   list-style: inside;
   font-family: 'Lato', sans-serif;
   text-align: center;
