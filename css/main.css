@@ -493,9 +493,26 @@ a.linkregular:visited{
     color: #275201;    
 }
 
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Defaults--------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
 h1 {
   font-size: 2em;
-  font-family: 'Overlock SC', cursive;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+ul {
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+li {
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
 }
 
 p {
