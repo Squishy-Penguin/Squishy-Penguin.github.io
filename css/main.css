@@ -368,6 +368,7 @@ ul.posts li h0{
 }
 
 .rabbitComment img{
+    display: block;
     margin-left: auto;
     margin-right: auto;
     
@@ -380,8 +381,8 @@ ul.posts li h0{
 }
 
 .rabbitComment p{
+    display: block;
     text-align: center;
-    
     padding: 10px 10px 10px;
     position: relative;
     background-color: white;
@@ -652,17 +653,13 @@ h1 {
 }
 
 ul {
-  display: list-item;
   list-style: inside;
-  list-style-type: circle;
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
 li {
-  display: list-item;
   list-style: inside;
-  list-style-type: upper-roman;
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
