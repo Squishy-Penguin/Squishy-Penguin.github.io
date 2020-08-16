@@ -433,14 +433,14 @@ ul.posts li h0{
 /*top padding = 25px, right and left = 50px, bottom = 25px*/
 .postTitle h1{
     /*padding: 5vh 15vw 5vh;*/
-    font-size: 4em;
+    font-size: auto;
     font-family: 'Overlock SC', cursive;
     color: black;
 }
 
 .postTitle h0{
     /*padding: 1vh 20vw 2vh;*/
-    font-size: 2em;
+    font-size: auto;
     font-family: 'Overlock SC', cursive;
     color: black;
 }
