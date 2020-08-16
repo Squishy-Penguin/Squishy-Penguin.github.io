@@ -654,13 +654,13 @@ h1 {
 
 ul {
   list-style: inside;
+  list-style-type: none;
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
 li {
   display: list-item;
-  list-style: inside;
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
