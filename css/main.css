@@ -222,6 +222,100 @@ nav ul li a:active{
     text-decoration: none;
 }
 
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Dropdown Menu---------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+.dropdbtn{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	
+	padding:10px 10px 10px;
+	background-color: rgba(255,255,255,0);
+
+	border-left: none;
+	border-right: none;
+	border-top: rgba(255,255,255,0.5);
+
+	color: black;
+	font-size: 2em;
+	font-family: 'Merienda', cursive;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;	
+	min-width: 200px;
+	z-index: 1;
+
+	background-color: rgba(255,255,255,0.4);
+}
+
+.dropdown-content p{
+	display: block;
+	padding: 25px 50px 25px;
+
+	color: black;
+
+	text-decoration: none;
+
+	font-family: 'Source Code Pro', monospace;
+}
+
+.dropdown-content ul{
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 5px;
+
+	font-size: 1.5em;
+	font-family:'Overlock SC',cursive;
+}
+
+.dropdown-content ul li{
+	margin-left: 0;
+	display:block;
+	padding: 25px 50px 25px;
+	text-align: center;
+	list-style: none;
+
+	background: rgba(93,103,220, 0.9);
+	color: white;
+}
+
+.dropdown-content ul li:hover{
+	display:block;
+	text-align: center;
+	list-style: none;
+
+	background: rgba(42,65,162,1);
+	color: white;
+}
+
+.dropdown-content ul li a{
+	font-family: 'Overlock SC', cursive;
+	color: white;
+}
+
+.dropdown{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	position: relative;
+	display:inline-block;
+
+	background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(banner1.jpg);
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.dropdown:hover .dropdown-content{display: block;}
+.dropdown:hover .dropbtn{color:black}
+
+
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Post Index----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
@@ -324,7 +418,7 @@ ul.posts li h0{
 
 
 /*-----------------------------------------------------------------------------------------------------------------*/
-/*-------------------------Post Image------------------------------------------------------------------------------*/
+/*-------------------------Post Banner Image-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*Banner image settings*/
 .postBanner{
@@ -374,21 +468,6 @@ ul.posts li h0{
     font-size: 2em;
     font-family: 'Overlock SC', cursive;
     color: black;
-}
-
-
-/*-----------------------------------------------------------------------------------------------------------------*/
-/*-------------------------Banner---------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------------------------*/
-
-/*Banner image:*/
-.picture1 {
-   width:100px;
-   height:100px; 
-   background-image: url(almost%20winter.png);
-   
-   margin:0; /* If you want no margin */
-   padding:0; /*if your want padding */
 }
 
 
