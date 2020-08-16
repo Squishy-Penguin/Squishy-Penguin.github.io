@@ -506,6 +506,7 @@ h1 {
 }
 
 ul {
+  display: list-item;
   list-style: inside;
   list-style-type: circle;
   font-family: 'Lato', sans-serif;
@@ -513,6 +514,7 @@ ul {
 }
 
 li {
+  display: list-item;
   list-style: inside;
   list-style-type: upper-roman;
   font-family: 'Lato', sans-serif;
