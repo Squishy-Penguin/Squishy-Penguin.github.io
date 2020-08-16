@@ -8,7 +8,7 @@ creator: Simple Rabbit
 <link rel="stylesheet" type="text/css" media="all" href="post-index.css" />
 
 <div class ="postBanner">
-  <img src="/../../../images/posts/breakfast2.jpg" alt="Yogurt Oatmeal: Blueberry-Banana>
+  <img src="/../../../images/posts/breakfast2.jpg" alt="Yogurt Oatmeal: Blueberry-Banana">
   <div class ="postTitle">
      <h1>Another Sweet Breakfast - Blueberry-Banana Oatmeal with Yogurt</h1>
      <h0> | July 4 2020</h0>
