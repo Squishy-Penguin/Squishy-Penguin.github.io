@@ -259,7 +259,7 @@ nav ul li a:active{
 	font-family: 'Source Code Pro', monospace;
 }
 
-.detailsPages ul{
+.detailsPages content ul{
 	margin: 0;
 	padding: 0;
 	font-size: 1.8em;
