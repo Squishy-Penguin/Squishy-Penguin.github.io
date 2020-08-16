@@ -506,11 +506,15 @@ h1 {
 }
 
 ul {
+  list-style: inside;
+  list-style-type: circle;
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
 li {
+  list-style: inside;
+  list-style-type: upper-roman;
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
