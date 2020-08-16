@@ -188,9 +188,9 @@ nav ul li a:active{
 .footer-site ul{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 5 px;
+    grid-gap: 5px;
     list-style: none;
-    font-size: 1em;
+    font-size: 0.5em;
     font-family: 'Lobster', cursive;
     text-transform:uppercase;
     color:#383838;
@@ -199,7 +199,7 @@ nav ul li a:active{
 .footer-site ul li{
     display:block;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.5em;
     font-family: 'Lobster', cursive;
     text-transform:uppercase;
     color: black;
@@ -211,7 +211,7 @@ nav ul li a:active{
 
 .footer-link a{
     color:rgba(25,53,64,1);
-    font-size: 1em;
+    font-size: 0.5em;
     font-family: 'Lobster', cursive;
     text-transform:uppercase;
     text-decoration: none;
@@ -230,7 +230,7 @@ ul.posts {
     padding: 0;
     display: grid;
     grid-template-columns: auto;
-    grid-gap: 5 px;
+    grid-gap: 5px;
     
     font-size: 1.5em;
     font-family: 'Merienda', cursive;
@@ -501,25 +501,21 @@ a.linkregular:visited{
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 h1 {
-  font-size: 2em;
   font-family: 'Lobster', cursive;
   text-align: center;
 }
 
 ul {
-  font-size: 1.3em;
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
 li {
-  font-size: 1.3em;
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
 p {
-    font-size: 1.3em;
     font-family: 'Lato', sans-serif;
     line-height: 1.4em;
     color: #333;
