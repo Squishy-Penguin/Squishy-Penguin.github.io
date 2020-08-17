@@ -450,6 +450,7 @@ ul.posts li h0{
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*Default: striped header and table content, background filled, border transparent*/
 table{
+	max-width: 80vw;
 	background: rgba(0,0,0,0);
 	color: black;
 }
