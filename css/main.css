@@ -493,25 +493,64 @@ tr:nth-child(odd){
 }
 
 /*Custom tables have collapsed borders:*/
-
-.tStripedX{
-	background: rgba(0,0,0,0);
-	color: black;
-}
-
-.tStripedY{
-}
-
 /*Borders horizontal only*/
 .tLinedX{
+}
+
+.tLinedX, .tLinedX th, .tLinedX td {
+	border-top: 0.1rem solid;
+	border-bottom: 0.1rem solid;
+	border-collapse: collapse;
+	border-color: #d5d5d5;
+	color: black;
+	text-align:center;
+	font-size: 1rem;
+	padding: 1rem;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.tLinedX th{
+	background: #ebf2f1;
 }
 
 /*Borders vertical*/
 .tLinedY{
 }
 
+.tLinedY, .tLinedY th, .tLinedY td {
+	border-left: 0.1rem solid;
+	border-right: 0.1rem solid;
+	border-collapse: collapse;
+	border-color: #d5d5d5;
+	color: black;
+	text-align:center;
+	font-size: 1rem;
+	padding: 1rem;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.tLinedXY th{
+	background: #ebf2f1;
+}
+
 /*All Borders*/
 .tLinedXY{
+	background: rgba(0,0,0,0);
+}
+
+.tLinedXY, .tLinedXY th, .tLinedXY td {
+	border: 0.1rem solid;
+	border-collapse: collapse;
+	border-color: #d5d5d5;
+	color: black;
+	text-align:center;
+	font-size: 1rem;
+	padding: 1rem;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.tLinedXY th{
+	background: #ebf2f1;
 }
 
 
