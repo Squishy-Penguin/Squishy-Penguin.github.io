@@ -233,7 +233,7 @@ nav ul li a:active{
 	width: 100vw;
 	position: relative;
 
-	background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(banner1.jpg);
+	background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(white-dots.png);
   	background-position: center center;
   	background-repeat: no-repeat;
   	background-size: cover;
