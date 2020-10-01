@@ -16,7 +16,7 @@ creator: Simple Rabbit
 </div>
                
 <div class="rabbitComment">
-  <img src="/../../../images/_posts/tofu_1.png" alt="Tofu">
+  <img src="/../../../images/posts/simple_rabbit_right_profile.png" alt="Simple Rabbit">
   <p>I used a butter knife to slice the banana. It was easy-to-use and safer.</p>
 </div>
 
