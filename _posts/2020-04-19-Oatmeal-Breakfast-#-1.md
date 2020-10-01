@@ -16,7 +16,7 @@ creator: Simple Rabbit
 </div>
                
 <div class="rabbitComment">
-  <img src="/../../../images/_posts/tofu_1.png" alt="Tofu">
+  <img src="/../../../images/posts/simple_rabbit_right_profile.png" alt="Simple Rabbit">
   <p>There are lots of sugars in this...but I like it a lot!</p>
 </div>
 
