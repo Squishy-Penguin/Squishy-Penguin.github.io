@@ -16,7 +16,7 @@ creator: Simple Rabbit
 </div>
                
 <div class="rabbitComment">
-  <img src="/../../../images/_posts/tofu_1.png" alt="Tofu">
+  <img src="/../../../images/posts/simple_rabbit_right_profile.png" alt="Simple Rabbit">
   <p>These interesting noodles have a special texture. They are chewy and a little sticky.</p>
 </div>
 
