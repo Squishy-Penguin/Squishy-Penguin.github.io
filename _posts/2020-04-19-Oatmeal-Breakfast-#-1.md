@@ -1,4 +1,5 @@
 ---
+layout: post-index
 title: "Oatmeal Breakfast #1"
 date: 2020-04-19
 language: English
