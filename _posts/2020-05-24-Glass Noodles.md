@@ -1,4 +1,5 @@
 ---
+layout: post-index
 title: "Glass Noodles #1"
 date: 2020-05-24
 language: English
