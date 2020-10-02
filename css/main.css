@@ -824,18 +824,18 @@ a.linkregular:visited{
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 h1 {
-  margin: 0 auto 40px;
+  margin: 0 40px 40px;
   font-family: 'Lobster', cursive;
 }
 
 ul {
-  margin: 0 auto 40px;
-  list-style: inside;
-  list-style-type: none;
+  margin: auto 40px auto;
+  list-style-type: dot;
   font-family: 'Lato', sans-serif;
 }
 
 li {
+  margin: auto 40px auto;
   font-family: 'Lato', sans-serif;
 }
 
