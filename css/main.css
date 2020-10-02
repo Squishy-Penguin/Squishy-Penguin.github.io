@@ -182,7 +182,8 @@ nav ul li a:active{
     /*top padding = 25px, right and left = 50px, bottom = 25px*/
     padding: 25px 50px 25px;
     font-size: 15px;
-    color:#383838;
+    color: #383838;
+    position: relative;
 }
 
 .footer-site ul{
@@ -814,11 +815,13 @@ a.linkregular:visited{
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 h1 {
+  margin: 0 auto 40px;
   font-family: 'Lobster', cursive;
   text-align: center;
 }
 
 ul {
+  margin: 0 auto 40px;
   list-style: inside;
   list-style-type: none;
   font-family: 'Lato', sans-serif;
@@ -826,11 +829,13 @@ ul {
 }
 
 li {
+  margin: 0 auto 40px;
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
 p {
+    margin: 0 auto 40px;
     font-family: 'Lato', sans-serif;
     line-height: 1.4em;
     color: #333;
