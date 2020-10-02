@@ -107,7 +107,7 @@ body {
     background-color: #ebf2f1;
     border-top: 1px solid #d5d5d5;
     /*top padding = 25px, right and left = 50px, bottom = 25px*/
-    padding: 25px 50px 25px;
+    padding: 35px 50px 25px;
 }
 
 .header-site h1{
