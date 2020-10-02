@@ -826,7 +826,6 @@ a.linkregular:visited{
 h1 {
   margin: 0 auto 40px;
   font-family: 'Lobster', cursive;
-  text-align: center;
 }
 
 ul {
@@ -834,13 +833,10 @@ ul {
   list-style: inside;
   list-style-type: none;
   font-family: 'Lato', sans-serif;
-  text-align: center;
 }
 
 li {
-  margin: 0 auto 40px;
   font-family: 'Lato', sans-serif;
-  text-align: center;
 }
 
 p {
