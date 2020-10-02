@@ -118,6 +118,15 @@ body {
     color:white;
 }
 
+.header-site h1 a{
+    text-decoration: none;
+    text-align: center;
+    line-height: 100px;
+    font-family: 'Merienda', cursive;
+    font-size:50px;
+    color:white;
+}
+
 nav{
     margin: 0;
     padding: 0;
