@@ -622,6 +622,90 @@ tr:nth-child(odd){
 }
 
 
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Code Content----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* Speech triangle pointed down, towards the right */
+.codeComment{
+    max-width: 80vw;
+    padding: 25px 50px 25px;
+    background-color: #ebf2f1;
+    font-size: 1.2em;
+    
+    font-family: 'Lato', sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.codeComment p{
+	display: block;
+	text-align: center;
+	padding: 10px 10px 10px;
+	position: relative;
+	background-color: white;
+	border-radius: 8px;
+}
+
+.codeComment:after{
+	border-left: 20px solid transparent;
+	border-top: 20px solid #ebf2f1;
+	bottom: -20px;
+	content: "";
+	color: white;
+	position: absolute;
+	left: 12px;
+}
+
+.codeCode{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 10px 10px;
+
+	background-image: url(code_content_bckg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: black;
+}
+
+.codeCode p{
+	display: block;
+	text-align: center;
+	padding: 10px 10px 10px;
+	position: relative;    
+	border-radius: 8px;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.codeDescription{
+    padding: 10px 10px 10px;
+    margin: auto 80px auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4em;
+    color: #333;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Contact Page---------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+.contactPage{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 10px 10px;
+
+	background-image: url(contact_bckg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Dropdown Menu---------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
