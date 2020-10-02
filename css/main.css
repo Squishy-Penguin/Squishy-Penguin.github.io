@@ -306,7 +306,7 @@ nav ul li a:active{
 /*-------------------------Post Index----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 ul.posts { 
-    margin: 0; 
+    margint: 0 0 0; 
     padding: 0;
     display: grid;
     grid-template-columns: auto;
@@ -317,7 +317,7 @@ ul.posts {
 }
 
 ul.posts li:nth-child(even) {
-    margin-left: 0;
+    margint: 0 0 0;
     text-indent: -1em;
     display:block;
     padding: 25px 50px 25px;
@@ -328,7 +328,7 @@ ul.posts li:nth-child(even) {
 }
 
 ul.posts li:nth-child(odd){
-    margin-left: 0;
+    margint: 0 0 0;
     text-indent: -1em;
     display:block;
     padding: 25px 50px 25px;
