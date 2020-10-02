@@ -824,23 +824,23 @@ a.linkregular:visited{
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 h1 {
-  margin: 0 40px 40px;
+  margin: 40 80px 40px;
   font-family: 'Lobster', cursive;
 }
 
 ul {
-  margin: auto 40px auto;
+  margin: auto 80px auto;
   list-style-type: dot;
   font-family: 'Lato', sans-serif;
 }
 
 li {
-  margin: auto 40px auto;
+  margin: auto 80px auto;
   font-family: 'Lato', sans-serif;
 }
 
 p {
-    margin: 0 auto 40px;
+    margin: auto 80px auto;
     font-family: 'Lato', sans-serif;
     line-height: 1.4em;
     color: #333;
