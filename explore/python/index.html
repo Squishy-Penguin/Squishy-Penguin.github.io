@@ -1,9 +1,7 @@
 ---
 layout: default
-title: "An Introduction to Python"
+title: "Basic Python - Cheat Sheet"
 ---
-
-<h1>Simple Introduction </h1>
 
 <div class ="codeComment">
   <p><b>Comment:</b> explain what will happen</p>
@@ -20,6 +18,7 @@ title: "An Introduction to Python"
 <div class ="codeCode">
   <p>&gt;&gt;&gt;x = 5 # x is an integer variable</p>
 </div>
+<p></p>
 
 <div class ="codeComment">
   <p><b>String:</b> a series of letters</p>
@@ -27,6 +26,7 @@ title: "An Introduction to Python"
 <div class ="codeCode">
   <p>&gt;&gt;&gt;x = &ldquo;happy&rdquo; # x is a string variable<br /></p>
 </div>
+<p></p>
 
 <div class ="codeComment">
   <p><b>Boolean:</b> true or false</p>
@@ -36,75 +36,153 @@ title: "An Introduction to Python"
   <p>2 <b>&gt;</b> 1 # two is <b>greater than</b> one <br /><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>&gt;=</b><b> greater than or equal to</b></p>
   <p>0 <b>==</b> 0 # zero <b>is equal to/the same as </b>zero <br /><b>and&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </b><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><b>or</b></p>
 </div>
+<p></p>
 
+<h1>Simple Input/Output </h1>
 
-<p><b>Scan:</b> read the <b>in</b>put</p>
-<p>&gt;&gt;&gt;answer = input(&ldquo;Enter the answer to the question&rdquo;)</p>
-<p><b>Print:</b>show the <b>out</b>put (result)</p>
-<p>&gt;&gt;&gt;print (answer)</p>
+<div class ="codeComment">
+  <p><b>Scan:</b> read the <b>in</>put</p>
+</div>
+<div class ="codeCode">
+  <p>&gt;&gt;&gt;answer = input(&ldquo;Enter the answer to the question&rdquo;)</p>
+</div>
+<p></p>
 
+<div class ="codeComment">
+  <p><b>Print:</b> read the <b>out</>put</p>
+</div>
+<div class ="codeCode">
+  <p>&gt;&gt;&gt;print(answer)</p>
+</div>
+<p></p>
 
-<p>Some examples we did in class:</p>
-<p>&nbsp;</p>
-<p>#find the remainder of 7 divided by 2</p>
-<p>&gt;&gt;&gt; print (7%2) # the symbol &lsquo;<b>%</b>&rsquo; is called <b>modulus, finds the remainder</b></p>
-<p>1</p>
-<p>&nbsp;</p>
-<p>#adding integers &gt;&gt;&gt;print (5 + 6)</p>
-<p>11</p>
-<p>#adding strings</p>
-<p>&gt;&gt;&gt;print (&ldquo;5&rdquo; + &ldquo;6&rdquo;)</p>
-<p>56</p>
-<p>#other things we can do with strings &gt;&gt;&gt;print (&ldquo;awesome &rdquo;*2) <br />awesome awesome</p>
-<p>&gt;&gt;&gt;print (&ldquo;awesome &rdquo;.upper())<br />AWESOME AWESOME</p>
-<p>&nbsp;</p>
-<p><b>#control flow (if...then&hellip;)</b></p>
-<p>&gt;&gt;&gt;age = 10</p>
+<h1>Simple Control Flow </h1>
+<div class ="codeComment">
+  <p>Think of this as an if...then&hellip;) sentence</p>
+</div>
+<div class ="codeCode">
+  <p>&gt;&gt;&gt;age = 10</p>
 <p>&gt;&gt;&gt;if (age &lt; 18):&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #younger than 18</p>
-<p>&gt;&gt;&gt; print (&ldquo;Child&rdquo;)<br />&gt;&gt;&gt;elif((age&gt;= 18)&amp;&amp;(age&lt;=60)):&nbsp; &nbsp; &nbsp; #between 18 and 70<br />&gt;&gt;&gt; print (&ldquo;Adult&rdquo;)<br />&gt;&gt;&gt;else:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#older than 70<br />&gt;&gt;&gt; print(&ldquo;Senior&rdquo;)</p>
-<p>Child</p>
-<p>&nbsp;</p>
-<p><b>#for loop (repetition)</b></p>
-<p>&gt;&gt;&gt;for x in range (0, 10):<br />&gt;&gt;&gt; print (x+1)<br />1</p>
-<p>2</p>
-<p>3</p>
-<p>4</p>
-<p>5</p>
-<p>6</p>
-<p>7</p>
-<p>8</p>
-<p>9</p>
-<p>10</p>
-<p>&nbsp;</p>
-<p><b>#while loop (repetition)</b><br />&gt;&gt;&gt;x = 0<br />&gt;&gt;&gt;while (x &lt; 10):</p>
-<p>&gt;&gt;&gt; print (x)</p>
-<p>&gt;&gt;&gt; x = x + 1&nbsp;</p>
-<p>1</p>
-<p>2</p>
-<p>3</p>
-<p>4</p>
-<p>5</p>
-<p>6</p>
-<p>7</p>
-<p>8</p>
-<p>9</p>
-<p>10</p>
-<p>&nbsp;</p>
-<p><b>#bubble sort</b></p>
-<p>&gt;&gt;&gt;def bubbleSort(something):</p>
-<p>&gt;&gt;&gt; &nbsp; &nbsp; for anumber in range (len(something)-1, 0, -1):</p>
-<p>&gt;&gt;&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for index in range (0, len(something)-1, 1):</p>
-<p>&gt;&gt;&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if something[index] &gt; something[index+1]:</p>
-<p>&gt;&gt;&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; temp = something[index]</p>
-<p>&gt;&gt;&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; something[index] = something[index + 1]</p>
-<p>&gt;&gt;&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; something[index + 1] = temp</p>
-<p><br /><br /></p>
-<p>&gt;&gt;&gt;<b>Numbers = [7, 1, 12, 23, 28, 102, 73, 99]</b> #this is an <b>array</b> of numbers</p>
-<p>&gt;&gt;&gt;bubbleSort(Numbers)</p>
-<p>&gt;&gt;&gt;print (Numbers)</p>
-<p>[1 7 12 23 28 73 99 102]</p>
-<p>&nbsp;</p>
-<p>#random number generator</p>
-<p>&gt;&gt;&gt;import random</p>
-<p>&gt;&gt;&gt; randomNumber = random.randint(1, 6) #generates a random number from 1 to 6<br />&gt;&gt;&gt;print (randomNumber) #this prints the random number</p>
-<p><br /><br /><br /><br /><br /><br /><br /><br /></p>
+<p>&gt;&gt;&gt; print (&ldquo;Child&rdquo;)
+  <br />&gt;&gt;&gt;elif((age&gt;= 18)&amp;&amp;(age&lt;=60)):&nbsp; &nbsp; &nbsp; #between 18 and 70
+  <br />&gt;&gt;&gt; print (&ldquo;Adult&rdquo;)
+  <br />&gt;&gt;&gt;else:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#older than 70
+  <br />&gt;&gt;&gt; print(&ldquo;Senior&rdquo;)</p>
+  <p>Child</p>
+</div>
+<p></p>
+
+<h1>Simple Code Efficiency </h1>
+<p>Instead of writing the same code over and over again, we can shorten it to one or two blocks.</p>
+<div class ="codeComment">
+  <p>For loop(repetition)</p>
+</div>
+<div class ="codeCode">
+  <p>&gt;&gt;&gt;for x in range (0, 10):<br />&gt;&gt;&gt; print (x+1)<br />1</p>
+  <p>2</p>
+  <p>3</p>
+  <p>4</p>
+  <p>5</p>
+  <p>6</p>
+  <p>7</p>
+  <p>8</p>
+  <p>9</p>
+  <p>10</p>
+</div>
+<p></p>
+
+<div class ="codeComment">
+  <p>While loop(repetition)</p>
+</div>
+<div class ="codeCode">
+  <p>&gt;&gt;&gt;x = 0<br />&gt;&gt;&gt;while (x &lt; 10):</p>
+  <p>&gt;&gt;&gt; print (x)</p>
+  <p>&gt;&gt;&gt; x = x + 1&nbsp;</p>
+  <p>1</p>
+  <p>2</p>
+  <p>3</p>
+  <p>4</p>
+  <p>5</p>
+  <p>6</p>
+  <p>7</p>
+  <p>8</p>
+  <p>9</p>
+  <p>10</p>
+</div>
+<p></p>
+
+<h1>Simple Sorting </h1>
+<p>If a computer has only one brain...how does it organize scrambled up numbers?</p>
+<div class ="codeComment">
+  <p>Bubble sort</p>
+</div>
+<div class ="codeCode">
+  <p>&gt;&gt;&gt;def bubbleSort(something):</p>
+  <p>&gt;&gt;&gt; &nbsp; &nbsp; for anumber in range (len(something)-1, 0, -1):</p>
+  <p>&gt;&gt;&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for index in range (0, len(something)-1, 1):</p>
+  <p>&gt;&gt;&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if something[index] &gt; something[index+1]:</p>
+  <p>&gt;&gt;&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; temp = something[index]</p>
+  <p>&gt;&gt;&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; something[index] = something[index + 1]</p>
+  <p>&gt;&gt;&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; something[index + 1] = temp</p>
+  <p><br /><br /></p>
+  <p>&gt;&gt;&gt;<b>Numbers = [7, 1, 12, 23, 28, 102, 73, 99]</b> #this is an <b>array</b> of numbers</p>
+  <p>&gt;&gt;&gt;bubbleSort(Numbers)</p>
+  <p>&gt;&gt;&gt;print (Numbers)</p>
+  <p>[1 7 12 23 28 73 99 102]</p>
+</div>
+<p></p>
+
+<h1>Try this yourself!</h1>
+<div class ="codeComment">
+  <p>Find the remainder of 7 divided by 2</p>
+</div>
+<div class ="codeCode">
+  <p>&gt;&gt;&gt; print (7%2) # the symbol &lsquo;<b>%</b>&rsquo; is called <b>modulus, finds the remainder</b></p>
+  <p>1</p>
+</div>
+<p></p>
+
+<div class ="codeComment">
+  <p>Add integers: 5 and 6</p>
+</div>
+<div class ="codeCode">
+  <p>&gt;&gt;&gt;print (5 + 6)</p>
+  <p>11</p>
+</div>
+<p></p>
+
+<div class ="codeComment">
+  <p>Find out what happens when strings are added.</p>
+</div>
+<div class ="codeCode">
+  <p>&gt;&gt;&gt;print (&ldquo;5&rdquo; + &ldquo;6&rdquo;)</p>
+  <p>56</p>
+</div>
+<p>...Is 5+6 the same as "5"+"6"?</p>
+<p></p>
+<p>Other things we can do with strings...</p>
+<div class ="codeComment">
+  <p>Show it multiple times...without writing it over and over again.</p>
+</div>
+<div class ="codeCode">
+  <p>&gt;&gt;&gt;print (&ldquo;awesome &rdquo;*2) <br />awesome awesome</p>
+</div>
+<p></p>
+<div class ="codeComment">
+  <p>Change its capitalization</p>
+</div>
+<div class ="codeCode">
+  <p>&gt;&gt;&gt;print (&ldquo;awesome &rdquo;.upper())<br />AWESOME AWESOME</p>
+</div>
+<p></p>
+
+<p>Bonus!</p>
+<div class ="codeComment">
+  <p>We can also generate random numbers.</p>
+</div>
+<div class ="codeCode">
+  <p>&gt;&gt;&gt;import random</p>
+  <p>&gt;&gt;&gt; randomNumber = random.randint(1, 6) #generates a random number from 1 to 6</p>
+  <p>&gt;&gt;&gt;print (randomNumber) #this prints the random number</p>
+</div>
+<p></p>
