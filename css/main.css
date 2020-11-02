@@ -630,7 +630,7 @@ tr:nth-child(odd){
 .codeComment{
 	max-width: 80vw;
 	display: block;
-	margin: 0 1.5em;
+	margin: auto;
 	padding: 25px 50px 25px;
 	justify-content: center;
 	align-items: center;
@@ -662,8 +662,8 @@ tr:nth-child(odd){
 .codeCode{
 	max-width: 80vw;
 	display: block;
-	margin: 0 1.5em;
-	padding: 10px 10px 10px;
+	margin: auto;
+	padding: 10px 50px 10px;
 
 	background-image: url(code_content_bckg.png);
 	background-position: center center;
@@ -675,7 +675,7 @@ tr:nth-child(odd){
 .codeCode p{
 	display: block;
 	text-align: center;
-	padding: 10px 10px 10px;
+	padding: 10px;
 	position: relative;    
 	border-radius: 8px;
 	font-family: 'Source Code Pro', monospace;
