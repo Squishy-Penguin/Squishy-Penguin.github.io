@@ -628,16 +628,17 @@ tr:nth-child(odd){
 /*-----------------------------------------------------------------------------------------------------------------*/
 /* Speech triangle pointed down, towards the right */
 .codeComment{
-    max-width: 80vw;
-    padding: 25px 50px 25px;
-    background-color: #ebf2f1;
-    font-size: 1.2em;
-    
-    font-family: 'Lato', sans-serif;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    position: relative; 
+	max-width: 80vw;
+	display: block;
+	margin: 0 1.5em;
+	padding: 25px 50px 25px;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	background-color: #ebf2f1;
+	font-size: 1.2em;
+	font-family: 'Lato', sans-serif;
 }
 
 .codeComment p{
@@ -645,7 +646,6 @@ tr:nth-child(odd){
 	text-align: center;
 	padding: 10px 10px 10px;
 	position: relative;
-	background-color: white;
 	border-radius: 8px;
 }
 
@@ -660,9 +660,9 @@ tr:nth-child(odd){
 }
 
 .codeCode{
+	max-width: 89vw;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	padding: 10px 10px 10px;
 
 	background-image: url(code_content_bckg.png);
@@ -705,169 +705,6 @@ tr:nth-child(odd){
 	background-size: cover;
 }
 
-
-/*-----------------------------------------------------------------------------------------------------------------*/
-/*-------------------------Dropdown Menu---------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------------------------*/
-.dropdbtn{
-	margin: 0;
-	padding: 0;
-	width: 100vw;
-	
-	padding:10px 10px 10px;
-	background-color: rgba(255,255,255,0);
-
-	border-left: none;
-	border-right: none;
-	border-top: rgba(255,255,255,0.5);
-
-	color: black;
-	font-size: 2em;
-	font-family: 'Merienda', cursive;
-}
-
-.dropdown-content{
-	display: none;
-	position: absolute;	
-	min-width: 200px;
-	z-index: 1;
-
-	background-color: rgba(255,255,255,0.4);
-}
-
-.dropdown-content p{
-	display: block;
-	padding: 25px 50px 25px;
-
-	color: black;
-
-	text-decoration: none;
-
-	font-family: 'Source Code Pro', monospace;
-}
-
-.dropdown-content ul{
-	margin: 0;
-	padding: 0;
-	display: grid;
-	grid-template-columns: auto;
-	grid-gap: 5px;
-
-	font-size: 1.5em;
-	font-family:'Overlock SC',cursive;
-}
-
-.dropdown-content ul li{
-	margin-left: 0;
-	display:block;
-	padding: 25px 50px 25px;
-	text-align: center;
-	list-style: none;
-
-	background: rgba(93,103,220, 0.9);
-	color: white;
-}
-
-.dropdown-content ul li:hover{
-	display:block;
-	text-align: center;
-	list-style: none;
-
-	background: rgba(42,65,162,1);
-	color: white;
-}
-
-.dropdown-content ul li a{
-	font-family: 'Overlock SC', cursive;
-	color: white;
-}
-
-.dropdown{
-	margin: 0;
-	padding: 0;
-	width: 100vw;
-	position: relative;
-	display:inline-block;
-
-	background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(banner1.jpg);
-  	background-position: center center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-}
-
-.dropdown:hover .dropdown-content{display: block;}
-.dropdown:hover .dropbtn{color:black}
-
-
-/*-----------------------------------------------------------------------------------------------------------------*/
-/*-------------------------SIDEBAR---------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------------------------*/
-
-/*Start: Sidebar menu*/
-.sidebar {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-}
-
-/* The sidebar links */
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidebar .CloseButton {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* The button used to open the sidebar */
-.OpenButton {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-}
-
-.OpenButton:hover {
-  background-color: #444;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
-/*End: sidebar settings*/
-
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Placeholder Content---------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
@@ -908,8 +745,8 @@ a.linkregular:visited{
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 h1 {
-  margin: 40px 80px 40px;
-  font-family: 'Lobster', cursive;
+  margin: 1em 1em;
+  font-family: 'Lato', sans-serif;
 }
 
 ul {
