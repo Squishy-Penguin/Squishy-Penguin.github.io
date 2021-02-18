@@ -101,20 +101,19 @@ body {
 /*-------------------------Header----------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 .header-site{
-    margin: 0; 
-    padding: 0;
-    height: 100px;
-    background-color: #ebf2f1;
+    margin: 1em 2em; 
+    background-color: #aee8f8;
     border-top: 1px solid #d5d5d5;
     /*top padding = 25px, right and left = 50px, bottom = 25px*/
-    padding: 35px 50px 25px;
+    padding: 10px;
 }
 
 .header-site h1{
+    margin: 2.5rem;
     text-align: center;
-    line-height: 100px;
+    line-height: 1.5rem;
     font-family: 'Merienda', cursive;
-    font-size:50px;
+    font-size: 5vw;
     color:white;
 }
 
@@ -632,19 +631,18 @@ tr:nth-child(odd){
 	max-width: 80vw;
 	display: block;
 	margin: auto;
-	padding: 25px 50px 25px;
+	padding: 1em 0.5em;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 
-	background-color: #ebf2f1;
+	background-color: #effff1;
 	font-size: 1.2em;
 	font-family: 'Lato', sans-serif;
 }
 
-.codeComment p{
+.codeComment .p{
 	display: block;
-	text-align: center;
 	padding: 10px 10px 10px;
 	position: relative;
 	border-radius: 8px;
@@ -655,7 +653,7 @@ tr:nth-child(odd){
 	border-top: 20px solid #ebf2f1;
 	bottom: -20px;
 	content: "";
-	color: white;
+	color: #aee8f8;
 	position: absolute;
 	left: 12px;
 }
@@ -664,7 +662,7 @@ tr:nth-child(odd){
 	max-width: 80vw;
 	display: block;
 	margin: auto;
-	padding: 10px 50px 10px;
+	padding: 1em 0.5em;
 
 	background-image: url(code_content_bckg.png);
 	background-position: center center;
@@ -673,9 +671,8 @@ tr:nth-child(odd){
 	color: black;
 }
 
-.codeCode p{
+.codeCode .p{
 	display: block;
-	text-align: center;
 	padding: 10px;
 	position: relative;    
 	border-radius: 8px;
@@ -746,8 +743,10 @@ a.linkregular:visited{
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 h1 {
-  margin: 1em 1em;
-  font-family: 'Lato', sans-serif;
+    margin: auto;
+    max-width: 80vw;
+    padding: 2em 0.5em 1em 0.5em;
+    font-family: 'Lato', sans-serif;
 }
 
 ul {
@@ -762,7 +761,8 @@ li {
 }
 
 p {
-    margin: auto 80px auto;
+    margin: auto;
+    padding: 2em 0.5em 1em 0.5em;
     font-family: 'Lato', sans-serif;
     line-height: 1.4em;
     color: #333;
