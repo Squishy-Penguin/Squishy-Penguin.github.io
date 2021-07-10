@@ -23,67 +23,69 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*Start: Banner image settings*/
 .hero {
-  /*take up most of page*/
-  width: 100vw;
-  height: 100vh; 
-  
-  display: flex;
-  justify-content: center;
-  align-items: center; /*use flexbox to align image*/
+	/*take up most of page*/
+	width: 100vw;
+	height: 100vh; 
 
-  position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
-  background-image: url(hero_cover0.png); /* removed linear gradient linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(hero_cover0.png);*/
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  background-attachment: fixed;
-  
-  text-align: center;
-  
-  /*filter: brightness(60%); /* Or use "linear-gradient" for dark effect on the image*/
+	display: flex;
+	justify-content: center;
+	align-items: center; /*use flexbox to align image*/
+
+	position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
+	background-image: url(hero_cover0.png); /* removed linear gradient linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(hero_cover0.png);*/
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	background-attachment: fixed;
+
+	text-align: center;
+
+	/*filter: brightness(60%); /* Or use "linear-gradient" for dark effect on the image*/
 }
 
 /* Place text in the middle of the image */
 /*.hero-content{
-  position: relative; 
-  font-family: 'Merienda', cursive;
-  color: black;
-  text-align: centre;
-  margin: 0.625rem;
+	position: relative; 
+	font-family: 'Merienda', cursive;
+	color: black;
+	text-align: centre;
+	margin: 0.625rem;
 }*/
 
 .hero-title {
-  font-size: 5em;
-  font-family: 'Merienda', cursive;
-  font-weight: 600;
-  margin-top 0;
-  margin-bottom: 0.5em;
+	font-size: 5em;
+	font-family: 'Merienda', cursive;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+	background: #FFFFFF1A;
 }
 
 .hero-subtitle {
-  font-size: 2em;
-  font-family: 'Overlock SC', cursive;
-  font-weight: 200;
-  margin-bottom: 0.5em;
+	font-size: 2em;
+	font-family: 'Overlock SC', cursive;
+	font-weight: 200;
+	margin-bottom: 0.5em;
+	background: #FFFFFF1A;
 }
 
 .hero-button{
   display: block;
-  width: 200px;
+  width: 5em;
   
   padding: 1em;
-  margin-top: 50px;
+  margin-top: 1em;
   margin-left: auto;
   margin-right: auto; /*centred button*/
   
   /*text*/
   color: black; 
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Merienda', cursive;
   font-size: 1.5em;
+  background: #FFFFFF;
   
   /*border*/
-  border: 3px solid black;
+  border: 3px solid white;
   /*rounded button*/  
   border-radius: 20px;
   
@@ -92,7 +94,7 @@ body {
 /*change background color of button when cursor hovers over it*/
 .hero-button:hover{
   background-color: black;
-  border: 3px solid white;
+  border: 3px solid black;
   color: white;
 }
 
