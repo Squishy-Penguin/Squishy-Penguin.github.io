@@ -70,32 +70,32 @@ body {
 }
 
 .hero-button{
-  display: block;
-  width: 5em;
-  
-  padding: 1em;
-  margin-top: 1em;
-  margin-left: auto;
-  margin-right: auto; /*centred button*/
-  
-  /*text*/
-  color: black; 
-  font-family: 'Merienda', cursive;
-  font-size: 1.5em;
-  background: #FFFFFF;
-  
-  /*border*/
-  border: 3px solid white;
-  /*rounded button*/  
-  border-radius: 20px;
+	display: block;
+	width: 5em;
+
+	padding: 1em;
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto; /*centred button*/
+
+	/*text*/
+	color: black; 
+	font-family: 'Merienda', cursive;
+	font-size: 1.5em;
+	background: #FFFFFF;
+
+	/*border*/
+	border: 3px solid white;
+	/*rounded button*/  
+	border-radius: 20px;
   
 }
 
 /*change background color of button when cursor hovers over it*/
 .hero-button:hover{
-  background-color: black;
-  border: 3px solid black;
-  color: white;
+	background-color: black;
+	border: 3px solid black;
+	color: white;
 }
 
 
