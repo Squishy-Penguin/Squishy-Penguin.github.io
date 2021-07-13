@@ -1,16 +1,13 @@
 // execute after html content is loaded
 document.addEventListener('DOMContentLoaded',domloaded,false);
 function domloaded(){
-    var canvas = document.getElementById("HungryCrocCanvas");
+    var canvas = document.getElementById("hungry");
     var ctx = canvas.getContext("2d");
-    // fill background
-    ctx.fillStyle = "#ebf2f1";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    var c_x = canvas.width/3;
-    var c_y = canvas.height/2;
-    var x = canvas.width;
-    var y = canvas.height/2;
+    var c_x = 0;
+    var c_y = canvas.height*0.5;
+    var x = canvas.width*0.8;
+    var y = canvas.height*0.5;
     var dx = -2;
     var dy = 0;
 
@@ -38,6 +35,10 @@ function domloaded(){
             img.src = img_list[i].url;
         }
     }
+    
+    function drawImage(img, locx=0, locy=0, sizex=500, sizey=500){
+      ctx.drawImage(Images[img], locx, locy, sizex, sizey);
+  }
 
     //load images from directory, make sure image is up to date
     var img_list = loadImages([{name: "ncc", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/ncc.png?"+Date.now()},
@@ -53,13 +54,13 @@ function domloaded(){
     function getCrocImage(croc_feeling){
       //get image matching croc's feelings
       if (croc_feeling == 0){
-        return Images["ncc"]}
+        return "ncc"}
       if (croc_feeling == 1){
-        return Images["hcc"]}
+        return "hcc"}
       if (croc_feeling == -1){
-        return Images["mcc"]}
+        return "mcc"}
       if (croc_feeling == -2){
-        return Images["scc"]}
+        return "scc"}
     }
 
     function updateCrocFeel(score){
@@ -75,11 +76,11 @@ function domloaded(){
     }
 
     function drawCroc() {
-        ctx.drawImage(getCrocImage(c_feel), c_x, c_y);
+        drawImage(getCrocImage(c_feel), c_x, c_y, 100, 100);
     }
 
     function drawTrash() {
-        ctx.drawImage(Images["trash0"], x, y);
+        drawImage("trash0",x,y, 100, 100);
     }
 
     function draw() {
@@ -89,8 +90,8 @@ function domloaded(){
         ctx.fillStyle = "#ebf2f1";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         //draw elements
+        drawTrash();
         drawCroc();
-        drawTrash()
         x += dx;
         y += dy;
     }
