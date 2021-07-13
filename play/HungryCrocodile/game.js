@@ -26,12 +26,12 @@ function domloaded(){
 
     function loadImages(img_list){
         //load and save images in list
-        var count = 0;
+        count = 0
         for(var i = 0; i < img_list.length; i++){
             var img = new Image();
             Images[img_list[i].name] = img;
             img.onload = function(){
-                total++;
+                count++;
             };
             img.src = img_list[i].url;
         }
