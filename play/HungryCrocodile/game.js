@@ -83,6 +83,10 @@ function domloaded(){
     function draw() {
         //clear screen
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // fill background
+        ctx.fillStyle = "#ebf2f1";
+        ctx.fillRect(0, 0, canvas.width, canvas.height
+        //draw elements
         drawCroc();
         drawTrash()
         x += dx;
