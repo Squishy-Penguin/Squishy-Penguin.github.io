@@ -52,23 +52,17 @@ function domloaded(){
                               ]);
     
     // crocodile moving
-    var keyPressed = false;
-    var moveUp = false;
-    var moveDown = false;
-    document.addEventListener('keydown', function(event) {const key = event.key; keyPressed = true;});
-    document.addEventListener('keydown', function(event) {keyPressed = false;});
-    if(keyPressed){
-        switch (event.key) {
-            case "ArrowUp":
-                // Up pressed
-                if (c_y < canvas.height){
-                    c_y += 10;}
-                break;
-            case "ArrowDown":
-                // Down pressed
-                if (c_y > 0){
-                    c_y -= 10;}
-                break;
+    document.addEventListener("keydown", keyDownHandler, false);
+    function keyDownHandler(e) {
+        if(e.code  == "ArrowUp") {
+        	if (c_y > 0){
+            c_y -= 5;
+            }
+        }
+        else if(e.code == 'ArrowDown') {
+          if (c_y < canvas.height){
+            c_y += 5;
+            }
         }
     }
 
