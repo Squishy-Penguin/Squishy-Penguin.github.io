@@ -85,7 +85,7 @@ function domloaded(){
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         // fill background
         ctx.fillStyle = "#ebf2f1";
-        ctx.fillRect(0, 0, canvas.width, canvas.height
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
         //draw elements
         drawCroc();
         drawTrash()
@@ -93,6 +93,6 @@ function domloaded(){
         y += dy;
     }
 
-    //draw every 5 seconds
-    setInterval(draw, 5);
+    //refresh slowly
+    setInterval(draw, 1000);
 }
