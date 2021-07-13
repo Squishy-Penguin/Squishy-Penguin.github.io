@@ -62,12 +62,12 @@ function domloaded(){
             case "ArrowUp":
                 // Up pressed
                 if (c_y < canvas.height){
-                    c_y += 10;
+                    c_y += 10;}
                 break;
             case "ArrowDown":
                 // Down pressed
                 if (c_y > 0){
-                    c_y -= 10;
+                    c_y -= 10;}
                 break;
         }
     }
@@ -75,25 +75,25 @@ function domloaded(){
     function getCrocImage(croc_feeling){
       //get image matching croc's feelings
       if (croc_feeling == 0){
-        return "ncc"}
+        return "ncc";}
       if (croc_feeling == 1){
-        return "hcc"}
+        return "hcc";}
       if (croc_feeling == -1){
-        return "mcc"}
+        return "mcc";}
       if (croc_feeling == -2){
-        return "scc"}
+        return "scc";}
     }
 
     function updateCrocFeel(score){
       //update croc's feelings based on current score
       if (score >= HAPPYTHRES){
-        c_feel = 1}
+        c_feel = 1;}
       else if (score <= SADTHRES){
-        c_Feel = -2}
+        c_Feel = -2;}
       else if ((score > SADTHRES) && (score < 0)){
-        c_Feel = -1}
+        c_Feel = -1;}
       else{
-        c_feel = 0}
+        c_feel = 0;}
     }
 
     function drawCroc() {
