@@ -37,15 +37,15 @@ function domloaded(){
         }
     }
 
-    //load images from directory, no cache
-    var img_list = loadImages([{name: "ncc", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/ncc.png"+Date.now()},
-                               {name: "mcc", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/mcc.png"+Date.now()},
-                               {name: "scc", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/scc.png"+Date.now()},
-                               {name: "hcc", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/hcc.png"+Date.now()},
-                               {name: "food0", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/food0.png"+Date.now()},
-                               {name: "food1", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/food1.png"+Date.now()},
-                               {name: "trash0", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/trash0.png"+Date.now()},
-                               {name: "trash1", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/trash1.png"+Date.now()},
+    //load images from directory, make sure image is up to date
+    var img_list = loadImages([{name: "ncc", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/ncc.png?"+Date.now()},
+                               {name: "mcc", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/mcc.png?"+Date.now()},
+                               {name: "scc", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/scc.png?"+Date.now()},
+                               {name: "hcc", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/hcc.png?"+Date.now()},
+                               {name: "food0", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/food0.png?"+Date.now()},
+                               {name: "food1", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/food1.png?"+Date.now()},
+                               {name: "trash0", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/trash0.png?"+Date.now()},
+                               {name: "trash1", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/trash1.png?"+Date.now()},
                               ]);
 
     function getCrocImage(croc_feeling){
