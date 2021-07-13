@@ -55,8 +55,8 @@ function domloaded(){
     var keyPressed = false;
     var moveUp = false;
     var moveDown = false;
-    document.addEventListener('keydown', function(event) {const key = event.key; keyPressed = True;});
-    document.addEventListener('keydown', function(event) {keyPressed = False;});
+    document.addEventListener('keydown', function(event) {const key = event.key; keyPressed = true;});
+    document.addEventListener('keydown', function(event) {keyPressed = false;});
     if(keyPressed){
         switch (event.key) {
             case "ArrowUp":
