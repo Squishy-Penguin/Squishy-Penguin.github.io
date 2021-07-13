@@ -32,6 +32,8 @@ function domloaded(){
             Images[img_list[i].name] = img;
             img.onload = function(){
                 count++;
+                if(total == list.length){                
+                }
             };
             img.src = img_list[i].url;
         }
