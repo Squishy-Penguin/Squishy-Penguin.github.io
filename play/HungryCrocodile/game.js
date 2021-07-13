@@ -50,26 +50,26 @@ function domloaded(){
 
     function getCrocImage(croc_feeling){
       //get image matching croc's feelings
-      if croc_feeling == 0:
-        return Images["ncc"]
-      if croc_feeling == 1:
-        return Images["hcc"]
-      if croc_feeling == -1:
-        return Images["mcc"]
-      if croc_feeling == -2:
-        return Images["scc"]
+      if (croc_feeling == 0){
+        return Images["ncc"]}
+      if (croc_feeling == 1){
+        return Images["hcc"]}
+      if (croc_feeling == -1){
+        return Images["mcc"]}
+      if (croc_feeling == -2){
+        return Images["scc"]}
     }
 
     function updateCrocFeel(score){
       //update croc's feelings based on current score
-      if (score >= HAPPYTHRES):
-        c_feel = 1
-      else if (score <= SADTHRES):
-        c_Feel = -2
-      else if ((score > SADTHRES) and (score < 0)) :
-        c_Feel = -1
-      else:
-        c_feel = 0
+      if (score >= HAPPYTHRES){
+        c_feel = 1}
+      else if (score <= SADTHRES){
+        c_Feel = -2}
+      else if ((score > SADTHRES) and (score < 0)){
+        c_Feel = -1}
+      else{
+        c_feel = 0}
     }
 
     function drawCroc() {
