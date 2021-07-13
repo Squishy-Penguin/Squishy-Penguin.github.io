@@ -1,7 +1,7 @@
 // execute after html content is loaded
 document.addEventListener('DOMContentLoaded',domloaded,false);
 function domloaded(){
-    var canvas = document.getElementById("hungry");
+    var canvas = document.getElementById("HungryCrocCanvas");
     var ctx = canvas.getContext("2d");
 
     var c_x = 0;
