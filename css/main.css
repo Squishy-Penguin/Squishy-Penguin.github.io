@@ -576,6 +576,7 @@ canvas HungryCrocCanvas{
 	background: #ebf2f1;
 	display: block;
 	width: 100vw;
+	margin-bottom: 1em;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
