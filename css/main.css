@@ -4,17 +4,12 @@
 /*Family: Lato, Lobster, Merienda, Overlock, Source Code Pro*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Merienda&family=Overlock+SC&family=Source+Code+Pro&display=swap');
 
-/*body {
-    margin:0; 
-    background-image: url(pawprint_bck.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-}*/
-
 body {
     margin:0; 
+    min-height: 100vh;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -571,11 +566,29 @@ tr:nth-child(odd){
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Games---------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
+.game-header{
+    margin: 0em 0em 1em 0em; 
+    background-color: white;
+    border-top: 1px solid #d5d5d5;
+    padding: 10px;
+    max-height: fit-content;
+}
+
+.game-header h1{
+    margin-top: 2.5rem;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    font-size: 5vw;
+    color: black;
+    padding: 1em;
+}
 
 canvas{
 	display: block;
 	width: 100vw;
 	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
@@ -665,7 +678,7 @@ p {
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 .footer-site {
-    height: 100vh;
+    margin-top: auto;
     background-color: #ebf2f1;
     border-top: 1px solid #d5d5d5;
     /*top padding = 25px, right and left = 50px, bottom = 25px*/
