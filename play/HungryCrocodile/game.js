@@ -1,5 +1,9 @@
 var canvas = document.getElementById("HungryCrocCanvas");
 var ctx = canvas.getContext("2d");
+// fill background
+ctx.fillStyle = "#ebf2f1";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
 var c_x = canvas.width/3;
 var c_y = canvas.height/2;
 var x = canvas.width;
