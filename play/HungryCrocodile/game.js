@@ -1,4 +1,4 @@
-var canvas = document.getElementById("canvasHungryCroc");
+var canvas = document.getElementById("HungryCrocCanvas");
 var ctx = canvas.getContext("2d");
 var c_x = canvas.width/3;
 var c_y = canvas.height/2;
