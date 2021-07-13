@@ -183,127 +183,6 @@ nav ul li a:active{
 
 
 /*-----------------------------------------------------------------------------------------------------------------*/
-/*-------------------------Footer---------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------------------------*/
-
-.footer-site {
-    background-color: #ebf2f1;
-    border-top: 1px solid #d5d5d5;
-    /*top padding = 25px, right and left = 50px, bottom = 25px*/
-    padding: 25px 50px 25px;
-    font-size: 15px;
-    color: #383838;
-    position: relative;
-}
-
-.footer-site ul{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 0px;
-    list-style: none;
-    font-size: 1rem;
-    font-family: 'Lobster', cursive;
-    text-transform:uppercase;
-    color:#383838;
-}
-
-.footer-site ul li{
-    display:block;
-    text-align: center;
-    font-size: 1rem;
-    font-family: 'Lobster', cursive;
-    text-transform:uppercase;
-    color: black;
-}
-
-.footer-link{
-    padding-left:0;
-}
-
-.footer-link a{
-    color:rgba(25,53,64,1);
-    font-size: 1rem;
-    font-family: 'Lobster', cursive;
-    text-transform:uppercase;
-    text-decoration: none;
-}
-
-.footer-link a:hover{
-    color: rgba(71,153,182,1);
-    text-decoration: none;
-}
-
-
-/*-----------------------------------------------------------------------------------------------------------------*/
-/*-------------------------Pages Index-----------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------------------------*/
-/*Overall box*/
-.detailsPages{
-	margin: 0;
-	padding: 25px 50px 25px;
-	width: 100vw;
-	position: relative;
-	
-	/*linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),*/
-
-	background-image: url(writing_bckg.png);
-  	background-position: center center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-	color: black;
-}
-
-/*Box title*/
-.detailsPages h1{
-	text-align: left;
-	font-size: 4rem;
-	font-family:'Merienda',cursive;
-}
-
-.summaryTransparent{
-	outline: none;
-	font-size: 2rem;
-	font-family: 'Merienda', cursive;
-}
-
-/*Within the summary:*/
-.detailsContent{
-	padding: 25px 50px 25px;
-	font-family: 'Source Code Pro', monospace;
-}
-
-.detailsContent ul{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	color: rgba(15,111,198,1);
-	text-align: left;
-
-	font-size: 2rem;
-	font-family: 'Overlock SC', cursive;
-	font-weight: bold;
-}
-
-.detailsContent ul a{
-	display: inline;
-	color:black;
-	text-decoration: none;
-	
-	font-size: 1.7rem;
-	font-family: 'Overlock SC', cursive;
-}
-
-.detailsContent ul a:hover{
-	color: rgba(15,111,198,1);
-}
-
-.detailsContent p{
-	font-size: 1rem;
-	font-family: 'Source Code Pro', monospace;
-}
-
-
-/*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Post Index----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 ul.posts { 
@@ -769,4 +648,125 @@ p {
     font-family: 'Lato', sans-serif;
     line-height: 1.4em;
     color: #333;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Footer---------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.footer-site {
+    height: 100vh;
+    background-color: #ebf2f1;
+    border-top: 1px solid #d5d5d5;
+    /*top padding = 25px, right and left = 50px, bottom = 25px*/
+    color: #383838;
+    position: relative;
+}
+
+.footer-site ul{
+    display: grid;
+    margin-top: 2em;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0px;
+    list-style: none;
+    font-size: 1rem;
+    font-family: 'Lobster', cursive;
+    text-transform:uppercase;
+    color:#383838;
+}
+
+.footer-site ul li{
+    display:block;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Lobster', cursive;
+    text-transform:uppercase;
+    color: black;
+}
+
+.footer-link{
+    padding-left:0;
+}
+
+.footer-link a{
+    color:rgba(25,53,64,1);
+    font-size: 1rem;
+    font-family: 'Lobster', cursive;
+    text-transform:uppercase;
+    text-decoration: none;
+}
+
+.footer-link a:hover{
+    color: rgba(71,153,182,1);
+    text-decoration: none;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Pages Index-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Overall box*/
+.detailsPages{
+	margin: 0;
+	padding: 25px 50px 25px;
+	width: 100vw;
+	position: relative;
+	
+	/*linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),*/
+
+	background-image: url(writing_bckg.png);
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	color: black;
+}
+
+/*Box title*/
+.detailsPages h1{
+	text-align: left;
+	font-size: 4rem;
+	font-family:'Merienda',cursive;
+}
+
+.summaryTransparent{
+	outline: none;
+	font-size: 2rem;
+	font-family: 'Merienda', cursive;
+}
+
+/*Within the summary:*/
+.detailsContent{
+	padding: 25px 50px 25px;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.detailsContent ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: rgba(15,111,198,1);
+	text-align: left;
+
+	font-size: 2rem;
+	font-family: 'Overlock SC', cursive;
+	font-weight: bold;
+}
+
+.detailsContent ul a{
+	display: inline;
+	color:black;
+	text-decoration: none;
+	
+	font-size: 1.7rem;
+	font-family: 'Overlock SC', cursive;
+}
+
+.detailsContent ul a:hover{
+	color: rgba(15,111,198,1);
+}
+
+.detailsContent p{
+	font-size: 1rem;
+	font-family: 'Source Code Pro', monospace;
 }
