@@ -66,7 +66,7 @@ function domloaded(){
         c_feel = 1}
       else if (score <= SADTHRES){
         c_Feel = -2}
-      else if ((score > SADTHRES) and (score < 0)){
+      else if ((score > SADTHRES) && (score < 0)){
         c_Feel = -1}
       else{
         c_feel = 0}
