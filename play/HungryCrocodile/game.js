@@ -6,6 +6,9 @@ function domloaded(){
 
     var c_x = 0;
     var c_y = canvas.height*0.5;
+    var c_width = 200 // to update!
+    var c_height = 200 // to update!
+   
     var x = canvas.width*0.8;
     var y = canvas.height*0.5;
     var dx = -2;
@@ -65,6 +68,15 @@ function domloaded(){
             }
         }
     }
+    
+    // crocodile ate
+    function eatStuff() {
+        if(((x <= c_x + c_width) && (x >= c_x)) && ((y <= c_y + c_height) && (y >= c_y))){
+            score++;
+            x = canvas.width*0.8;
+            y = canvas.height*0.5;
+        }
+    }
 
     function getCrocImage(croc_feeling){
       //get image matching croc's feelings
@@ -91,11 +103,17 @@ function domloaded(){
     }
 
     function drawCroc() {
-        drawImage(getCrocImage(c_feel), c_x, c_y, 100, 100);
+        drawImage(getCrocImage(c_feel), c_x, c_y, 200, 200);
     }
 
     function drawTrash() {
-        drawImage("trash0",x,y, 100, 100);
+        drawImage("trash0",x,y, 200, 200);
+    }
+    
+    function drawScore() {
+        ctx.font = "16px Arial";
+        ctx.fillStyle = "#0095DD";
+        ctx.fillText("Score: "+score, 8, 20);
     }
 
     function draw() {
@@ -104,7 +122,12 @@ function domloaded(){
         // fill background
         ctx.fillStyle = "#ebf2f1";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
-        //draw elements
+        // check for updates
+        eatStuff();
+        updateCrocFeel(score);
+        // draw game stats
+        drawScore()
+        //draw characters
         drawTrash();
         drawCroc();
         x += dx;
