@@ -50,6 +50,27 @@ function domloaded(){
                                {name: "trash0", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/trash0.png?"+Date.now()},
                                {name: "trash1", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/trash1.png?"+Date.now()},
                               ]);
+    
+    // crocodile moving
+    var keyPressed = false;
+    var moveUp = false;
+    var moveDown = false;
+    document.addEventListener('keydown', function(event) {const key = event.key; keyPressed = True;});
+    document.addEventListener('keydown', function(event) {keyPressed = False;});
+    if(keyPressed){
+        switch (event.key) {
+            case "ArrowUp":
+                // Up pressed
+                if (c_y < canvas.height){
+                    c_y += 10;
+                break;
+            case "ArrowDown":
+                // Down pressed
+                if (c_y > 0){
+                    c_y -= 10;
+                break;
+        }
+    }
 
     function getCrocImage(croc_feeling){
       //get image matching croc's feelings
@@ -97,5 +118,5 @@ function domloaded(){
     }
 
     //refresh slowly
-    setInterval(draw, 1000);
+    setInterval(draw, 500);
 }
