@@ -6,11 +6,22 @@ function domloaded(){
 
     var c_x = 0;
     var c_y = canvas.height*0.5;
-    var c_width = 200 // to update!
-    var c_height = 200 // to update!
+    var c_width = 100 // to update!
+    var c_height = 100 // to update!
+    var t0_width = 50 // to update!
+    var t0_height = 50 // to update!
+    var t1_width = 50 // to update!
+    var t1_height = 50 // to update!
+    var f0_width = 50 // to update!
+    var f0_height = 50 // to update!
+    var f1_width = 50 // to update!
+    var f1_height = 50 // to update!
    
-    var x = canvas.width*0.8;
-    var y = canvas.height*0.5;
+    var t0_x = canvas.width*0.8;
+    var t0_y = canvas.height*0.5;
+    var t1_x = canvas.width*0.8;
+    var t1_y = canvas.height*0.1;
+    
     var dx = -2;
     var dy = 0;
 
@@ -71,10 +82,15 @@ function domloaded(){
     
     // crocodile ate
     function eatStuff() {
-        if(((x <= c_x + c_width) && (x >= c_x)) && ((y <= c_y + c_height) && (y >= c_y))){
+        if(((t0_x <= c_x + c_width) && (t0_x >= c_x)) && ((t0_y <= c_y + c_height) && (t0_y >= c_y))){
             score++;
-            x = canvas.width*0.8;
-            y = canvas.height*0.5;
+            t0_x = canvas.width*0.8;
+            t0_y = canvas.height*0.5;
+        }
+        else if(((t1_x <= c_x + c_width) && (t1_x >= c_x)) && ((t1_y <= c_y + c_height) && (t1_y >= c_y))){
+            score++;
+            t1_x = canvas.width*0.8;
+            t1_y = canvas.height*0.2;
         }
     }
 
@@ -103,11 +119,12 @@ function domloaded(){
     }
 
     function drawCroc() {
-        drawImage(getCrocImage(c_feel), c_x, c_y, 200, 200);
+        drawImage(getCrocImage(c_feel), c_x, c_y, c_width, c_height);
     }
 
     function drawTrash() {
-        drawImage("trash0",x,y, 200, 200);
+        drawImage("trash0", t0_x, t0_y, t0_width, t0_height);
+        drawImage("trash1", t1_x, t1_y, t1_width, t1_height);
     }
     
     function drawScore() {
@@ -130,8 +147,10 @@ function domloaded(){
         //draw characters
         drawTrash();
         drawCroc();
-        x += dx;
-        y += dy;
+        t0_x += dx;
+        t0_y += dy;
+        t1_x += dx;
+        t1_y += dy;
     }
 
     //refresh slowly
