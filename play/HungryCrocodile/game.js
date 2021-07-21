@@ -1,21 +1,69 @@
+//Properties of each game character
+class Item {
+  constructor(name, x=0, y=0, dx=0, dy=0, w=0, h=0, value=0) {
+    this.name = name;
+    this.x = x;
+    this.y = y;
+    this.dx = dx;
+    this.dy = dy;
+    this.w = w;
+    this.h = h;
+    this.value = value;
+    this.emotion = 0;
+    
+    this.onscreen = false;
+    this.wait_to_appear = 5;
+    if (Math.floor(Math.random() * 11) > 5){
+    	this.onscreen = true;
+      this.wait_to_appear = 0;
+    }
+  }
+  // set x, y
+  setStartPosition(x, y) {
+    this.x = x;
+    this.y = y;
+    return 0;
+  }
+  // set dx, dy
+  setTravelDirection(dx, dy) {
+    this.dx = dx;
+    this.dy = dy;
+    return 0;
+  }
+  // width and height of img
+  setDimensions(w, h) {
+    this.w = w;
+    this.h = h;
+    return 0;
+  }
+  // points this is worth when eaten
+  setValue(value) {
+    this.value = value;
+    return 0;
+  }
+  // set offscreen
+  setOffScreen(wait) {
+    this.onscreen = false;
+    this.wait_to_appear = wait;
+    return 0;
+  }
+  // name matching image of character
+  updateImage(name) {
+    this.name = name;
+    return 0;
+  }
+  // how character is feeling
+  updateEmotion(emotion) {
+    this.emotion = emotion;
+    return 0;
+  }
+}
+
 // execute after html content is loaded
 document.addEventListener('DOMContentLoaded',domloaded,false);
 function domloaded(){
     var canvas = document.getElementById("HungryCrocCanvas");
     var ctx = canvas.getContext("2d");
-
-    var c_x = 0;
-    var c_y = canvas.height*0.5;
-    var c_width = 100 // to update!
-    var c_height = 100 // to update!
-    var t0_width = 50 // to update!
-    var t0_height = 50 // to update!
-    var t1_width = 50 // to update!
-    var t1_height = 50 // to update!
-    var f0_width = 50 // to update!
-    var f0_height = 50 // to update!
-    var f1_width = 50 // to update!
-    var f1_height = 50 // to update!
    
     var t0_x = canvas.width*0.8;
     var t0_y = canvas.height*0.5;
@@ -64,71 +112,148 @@ function domloaded(){
                                {name: "trash0", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/trash0.png?"+Date.now()},
                                {name: "trash1", url: "https://squishy-penguin.github.io/play/HungryCrocodile/img/trash1.png?"+Date.now()},
                               ]);
+
+    //properties of each character
+    var crocodile = new Item("ncc", 0, canvas.height*0.5, 5, 5, 100, 100, 0); 
+    var random_factor = Math.random();
+    var frog = new Item("food0", canvas.width*0.8, Math.floor(Math.random() * canvas.height), -2, 0, 50, 50, 1);
+    var bird = new Item("food1", canvas.width*0.8, Math.floor(Math.random() * canvas.height), -2, 0, 50, 50, 1);
+    var garbage = new Item("trash0", canvas.width*0.8, Math.floor(Math.random() * canvas.height), -2, 0, 50, 50, -1);
+    var litter = new Item("trash1", canvas.width*0.8, Math.floor(Math.random() * canvas.height), -2, 0, 50, 50, -1);
     
-    // crocodile moving
+    // characters that can be eaten
+    var things_to_eat = [frog, bird, garbage, litter]
+    
+    // check if character is on screen
+    function isOnScreen(character){
+      if (character.wait_to_appear == 0){
+        if ((character.x >= 0)&&(character.x <= canvas.width * 0.8)){
+          //x in canvas range
+          if ((character.y >= 0)&&(character.y <= canvas.height * 0.8)){
+            //y in canvas range
+            character.onscreen = true;
+          }
+          else{
+            //y is not in canvas range
+            character.onscreen = false;
+          }    	
+        }
+        else{
+          //x is not in canvas range
+          character.onscreen = false;
+        }
+      }
+      else{
+      	character.onscreen = false;
+      }
+			return character.onscreen;
+    }
+    
+    /* Keyboard Controls
+    			up arrow: crocodile moves up
+          down arrow: crocodile moves down
+          left arrow: crocodile moves left
+          right arrow: crocdile moves right 
+       Crocodile should not move off screeen
+    */    
+    // crocodile must be on screen
+    crocodile.onscreen = true;
     document.addEventListener("keydown", keyDownHandler, false);
     function keyDownHandler(e) {
         if(e.code  == "ArrowUp") {
-        	if (c_y > 0){
-            c_y -= 5;
+        	if (crocodile.y > 0){
+            crocodile.y -= crocodile.dy;
             }
         }
         else if(e.code == 'ArrowDown') {
-          if (c_y < canvas.height){
-            c_y += 5;
+          if (crocodile.y < canvas.height){
+            crocodile.y += crocodile.dy;
+            }
+        }
+        if(e.code  == "ArrowLeft") {
+        	if (crocodile.x > 0){
+            crocodile.x -= crocodile.dx;
+            }
+        }
+        else if(e.code == 'ArrowRight') {
+          if (crocodile.x < canvas.height){
+            crocodile.x += crocodile.dx;
             }
         }
     }
     
-    // crocodile ate
+    // check if a character was eaten
     function eatStuff() {
-        if(((t0_x <= c_x + c_width) && (t0_x >= c_x)) && ((t0_y <= c_y + c_height) && (t0_y >= c_y))){
-            score++;
-            t0_x = canvas.width*0.8;
-            t0_y = canvas.height*0.5;
+        for (var i = 0; i < things_to_eat.length; i++){
+        		var current_item = things_to_eat[i];
+            
+            // if on screen, check if item was eaten
+            if (current_item.onscreen){
+            	if(((current_item.x <= crocodile.x + crocodile.w) && (current_item.x >= crocodile.x)) && ((current_item.y <= crocodile.y + crocodile.h) && (current_item.y >= crocodile.y))){
+                score += current_item.value;
+                current_item.setStartPosition(canvas.width*0.8, canvas.height*0.5);
+                current_item.setOffScreen(5);
+              }
+            
+            }
         }
-        else if(((t1_x <= c_x + c_width) && (t1_x >= c_x)) && ((t1_y <= c_y + c_height) && (t1_y >= c_y))){
-            score++;
-            t1_x = canvas.width*0.8;
-            t1_y = canvas.height*0.2;
-        }
+        
     }
 
-    function getCrocImage(croc_feeling){
+    function getCrocImage(){
       //get image matching croc's feelings
-      if (croc_feeling == 0){
-        return "ncc";}
-      if (croc_feeling == 1){
-        return "hcc";}
-      if (croc_feeling == -1){
-        return "mcc";}
-      if (croc_feeling == -2){
-        return "scc";}
+      if (crocodile.emotion == 0){
+        crocodile.updateImage("ncc");}
+      else if (crocodile.emotion == 1){
+      	crocodile.updateImage("hcc")}
+      else if (crocodile.emotion == -1){
+      	crocodile.updateImage("mcc");}
+      else if (crocodile.emotion == -2){
+        crocodile.updateImage("scc");}
+      return 0;
     }
 
     function updateCrocFeel(score){
       //update croc's feelings based on current score
       if (score >= HAPPYTHRES){
-        c_feel = 1;}
+        // happy
+        crocodile.updateEmotion(1);}
       else if (score <= SADTHRES){
-        c_Feel = -2;}
+        // sad
+        crocodile.updateEmotion(-2);}
       else if ((score > SADTHRES) && (score < 0)){
-        c_Feel = -1;}
+        // mad
+        crocodile.updateEmotion(-1);}
       else{
-        c_feel = 0;}
+        // neutral
+        crocodile.updateEmotion(0)}
     }
 
     function drawCroc() {
-        drawImage(getCrocImage(c_feel), c_x, c_y, c_width, c_height);
+        // update crocodile image based on feeling
+        getCrocImage();
+        drawImage(crocodile.name, crocodile.x, crocodile.y, crocodile.w, crocodile.h);
     }
 
-    function drawTrash() {
-        drawImage("trash0", t0_x, t0_y, t0_width, t0_height);
-        drawImage("trash1", t1_x, t1_y, t1_width, t1_height);
+    function drawThingsToEat() {
+      for (var i = 0; i < things_to_eat.length; i++){
+              var current_item = things_to_eat[i];
+              if (isOnScreen(current_item)){
+                // if on screen, draw item
+                drawImage(current_item.name, current_item.x, current_item.y, current_item.w, current_item.h);
+                // update movements
+                current_item.x += current_item.dx;
+                current_item.y += current_item.dy;
+              }
+              else{
+                // wait time decreases by 1
+                current_item.wait_to_appear -= 1;
+              }
+          }
     }
     
     function drawScore() {
-        ctx.font = "16px Arial";
+        ctx.font = "1rem Courier New";
         ctx.fillStyle = "#0095DD";
         ctx.fillText("Score: "+score, 8, 20);
     }
@@ -142,17 +267,13 @@ function domloaded(){
         // check for updates
         eatStuff();
         updateCrocFeel(score);
+        //draw characters
+        drawThingsToEat();
+        drawCroc();
         // draw game stats
         drawScore()
-        //draw characters
-        drawTrash();
-        drawCroc();
-        t0_x += dx;
-        t0_y += dy;
-        t1_x += dx;
-        t1_y += dy;
     }
 
     //refresh slowly
-    setInterval(draw, 500);
+    setInterval(draw, 250);
 }
