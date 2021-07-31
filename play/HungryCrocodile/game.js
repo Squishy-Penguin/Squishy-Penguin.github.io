@@ -114,12 +114,12 @@ function domloaded(){
                               ]);
 
     //properties of each character
-    var crocodile = new Item("ncc", 0, canvas.height*0.5, 5, 5, 100, 100, 0); 
+    var crocodile = new Item("ncc", 0, canvas.height*0.5, 5, 5, 144, 82, 0); 
     var random_factor = Math.random();
-    var frog = new Item("food0", canvas.width*0.8, Math.floor(Math.random() * canvas.height), -2, 0, 50, 50, 1);
-    var bird = new Item("food1", canvas.width*0.8, Math.floor(Math.random() * canvas.height), -2, 0, 50, 50, 1);
-    var garbage = new Item("trash0", canvas.width*0.8, Math.floor(Math.random() * canvas.height), -2, 0, 50, 50, -1);
-    var litter = new Item("trash1", canvas.width*0.8, Math.floor(Math.random() * canvas.height), -2, 0, 50, 50, -1);
+    var frog = new Item("food0", canvas.width*0.8, Math.floor(Math.random() * canvas.height), -2, 0, 63, 46, 1);
+    var bird = new Item("food1", canvas.width*0.8, Math.floor(Math.random() * canvas.height), -2, 0, 63, 48, 1);
+    var garbage = new Item("trash0", canvas.width*0.8, Math.floor(Math.random() * canvas.height), -2, 0, 62, 48, -1);
+    var litter = new Item("trash1", canvas.width*0.8, Math.floor(Math.random() * canvas.height), -2, 0, 63, 48, -1);
     
     // characters that can be eaten
     var things_to_eat = [frog, bird, garbage, litter]
