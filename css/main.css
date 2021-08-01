@@ -585,8 +585,6 @@ tr:nth-child(odd){
 
 canvas{
 	display: block;
-	width: 600px;
-	height: 400px;
 	margin-bottom: 1em;
 	margin-right: auto;
 	margin-left: auto;
