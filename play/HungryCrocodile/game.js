@@ -71,11 +71,11 @@ function domloaded() {
   ctx.canvas.height = window.innerHeight;
   ctx.canvas.width = window.innerWidth;
 
-  var top_offset = 8;
+  var top_offset = 20;
   // min y = (0*(canvas_height - 2h))
   // max x = canvas_width - w
   var all_start_y = [];
-  for (i = 0; i < Math.floor((canvas.height - 30) / 50); i++) {
+  for (i = 0; i < Math.floor((canvas.height - 50) / 50); i++) {
     all_start_y.push(top_offset + i * 50);
   }
   var available_start_y = all_start_y.slice();
@@ -144,7 +144,7 @@ function domloaded() {
   ]);
 
   //properties of each character
-  var crocodile = new Item("ncc", 0, canvas.height * 0.5, 5, 5, 144 * 0.5, 82 * 0.5, 0);
+  var crocodile = new Item("ncc", 0, canvas.height * 0.5, 5, 5, 144, 82, 0);
 
   //get a random y for each thing to eat
   var random_index = Math.floor(Math.random() * available_start_y.length);
@@ -155,7 +155,7 @@ function domloaded() {
   if (index > -1) {
     available_start_y.splice(index, 1);
   }
-  var frog = new Item("food0", canvas.width - 31, start_y, -2, 0, 63 * 0.5, 46 * 0.5, 1);
+  var frog = new Item("food0", canvas.width - 50, start_y, -2, 0, 63, 46, 1);
 
   // random y for bird
   random_index = Math.floor(Math.random() * available_start_y.length);
@@ -164,7 +164,7 @@ function domloaded() {
   if (index > -1) {
     available_start_y.splice(index, 1);
   }
-  var bird = new Item("food1", canvas.width - 31, start_y, -2, 0, 63 * 0.5, 48 * 0.5, 1);
+  var bird = new Item("food1", canvas.width - 50, start_y, -2, 0, 63, 48, 1);
 
   // random y for garbage
   random_index = Math.floor(Math.random() * available_start_y.length);
@@ -173,7 +173,7 @@ function domloaded() {
   if (index > -1) {
     available_start_y.splice(index, 1);
   }
-  var garbage = new Item("trash0", canvas.width - 31, start_y, -2, 0, 62 * 0.5, 48 * 0.5, -1);
+  var garbage = new Item("trash0", canvas.width - 50, start_y, -2, 0, 62, 48, -1);
 
   // random y for littered bottle
   random_index = Math.floor(Math.random() * available_start_y.length);
@@ -182,7 +182,7 @@ function domloaded() {
   if (index > -1) {
     available_start_y.splice(index, 1);
   }
-  var litter = new Item("trash1", canvas.width - 31, start_y, -2, 0, 63 * 0.5, 48 * 0.5, -1);
+  var litter = new Item("trash1", canvas.width - 50, start_y, -2, 0, 63, 48, -1);
 
   // characters that can be eaten
   var things_to_eat = [frog, bird, garbage, litter]
@@ -202,7 +202,7 @@ function domloaded() {
       if (index > -1) {
         available_start_y.splice(index, 1);
       }
-      character.setStartPosition(canvas.width - 31, start_y);
+      character.setStartPosition(canvas.width - 50, start_y);
 
     }
 
@@ -340,7 +340,7 @@ function domloaded() {
   }
 
   function drawScore() {
-    ctx.font = "1rem Courier New";
+    ctx.font = "2rem Courier New";
     ctx.fillStyle = "#0095DD";
     ctx.fillText("Score: " + score, top_offset, 20);
   }
