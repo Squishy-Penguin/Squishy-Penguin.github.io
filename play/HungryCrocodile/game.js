@@ -155,7 +155,7 @@ function domloaded() {
   if (index > -1) {
     available_start_y.splice(index, 1);
   }
-  var frog = new Item("food0", canvas.width - 50, start_y, -2, 0, 63, 46, 1);
+  var frog = new Item("food0", canvas.width - 50, start_y, -8, 0, 63, 46, 1);
 
   // random y for bird
   random_index = Math.floor(Math.random() * available_start_y.length);
@@ -164,7 +164,7 @@ function domloaded() {
   if (index > -1) {
     available_start_y.splice(index, 1);
   }
-  var bird = new Item("food1", canvas.width - 50, start_y, -2, 0, 63, 48, 1);
+  var bird = new Item("food1", canvas.width - 50, start_y, -5, 0, 63, 48, 1);
 
   // random y for garbage
   random_index = Math.floor(Math.random() * available_start_y.length);
@@ -173,7 +173,7 @@ function domloaded() {
   if (index > -1) {
     available_start_y.splice(index, 1);
   }
-  var garbage = new Item("trash0", canvas.width - 50, start_y, -2, 0, 62, 48, -1);
+  var garbage = new Item("trash0", canvas.width - 50, start_y, -8, 0, 62, 48, -1);
 
   // random y for littered bottle
   random_index = Math.floor(Math.random() * available_start_y.length);
@@ -182,7 +182,7 @@ function domloaded() {
   if (index > -1) {
     available_start_y.splice(index, 1);
   }
-  var litter = new Item("trash1", canvas.width - 50, start_y, -2, 0, 63, 48, -1);
+  var litter = new Item("trash1", canvas.width - 50, start_y, -5, 0, 63, 48, -1);
 
   // characters that can be eaten
   var things_to_eat = [frog, bird, garbage, litter]
@@ -362,5 +362,5 @@ function domloaded() {
   }
 
   //refresh slowly
-  setInterval(draw, 200);
+  setInterval(draw, 150);
 }
