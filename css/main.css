@@ -575,6 +575,74 @@ tr:nth-child(odd){
     color: #333;
 }
 
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-------------------------Chat with Bot---------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+.chatPageBanner{
+    width: 100vw;
+    height: 50vh; 
+    background-color: #464646;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center; /*use flexbox to align image*/
+
+    position: relative; /* Position and center the image to scale nicely on all screens, v.s. absolute*/
+}
+
+.chatPageBanner img {
+  object-fit: cover;
+  width: 100vw;
+  height: 50vh;
+}
+
+.message_display{
+  /* top right bottom left */
+  margin: 1rem 2.5rem 1rem 2.5rem;
+  display: block;
+  background-color: #ebf2f1;
+  min-height: 50vh;
+  list-style: none;
+}
+
+.message_display h1{
+  padding: 0.5rem;
+  background-color: #ebe2f1;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+.message_display li{
+  padding: 0.5rem;
+}
+
+#all_sent_messages{
+  display: block;
+  background-color: #ebf2f1;
+}
+
+.write_message{
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  text-align: center;
+}
+input{
+  text-align: left;
+  background-color: #d1d1d1;
+}
+
+input[type=text]{
+  min-width: 80vw;
+}
+
+textarea{
+  min-width: 80vw;
+}
+
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-------------------------Games---------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
