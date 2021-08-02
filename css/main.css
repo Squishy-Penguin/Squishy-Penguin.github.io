@@ -602,11 +602,8 @@ canvas{
 	margin-left: auto;
 }
 
-canvas{
+.hangman{
 	display: block;
-	margin-bottom: 1em;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 .game_instruction{
