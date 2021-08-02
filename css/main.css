@@ -243,17 +243,29 @@ ul.posts li h0{
 /*-------------------------Post Content----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 .rabbitComment{
-	max-width: 80vw;
+	width: 80vw;
 	margin: auto;
 	padding: 25px 50px 25px;
 	background-color: rgba(0,0,0,0);
 	font-size: 1.2em;
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Lato', sans-serif;
 
 	display: block;
 	justify-content: center;
 	align-items: center;
 	box-shadow:	0 2px 7px rgba(0, 0, 0, .4), 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+.rabbitComment a{
+	font-size: 1.5em;
+	font-family: 'Merienda', cursive;
+	color: black;
+	text-decoration: none;
+}
+
+.rabbitComment a:hover{
+	color: #aee8f8;
+	text-decoration: none;
 }
 
 .rabbitComment img{
@@ -580,7 +592,7 @@ tr:nth-child(odd){
 	font-family: 'Merienda', cursive;
 	font-size: 5vw;
 	color: black;
-	padding: 1em;
+	padding: 0;
 }
 
 canvas{
@@ -588,6 +600,91 @@ canvas{
 	margin-bottom: 1em;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+canvas{
+	display: block;
+	margin-bottom: 1em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.game_instruction{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: #292929;
+}
+
+#HangmanUnknownWord{
+  min-height: 100px;
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  list-style: none;
+  background: orange;
+  /* color: orange; */
+}
+
+#HangmanUnknownWord li{
+  list-style: none;
+  display: inline;
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+#HangmanWrongGuesses{
+  min-height: 100px;
+  display: flex;
+  margin-right: 1rem;
+  text-align: center;
+  padding: 2rem;
+  border-bottom: solid 0.25rem orange;
+  border-right: solid 0.25rem orange;
+  color: red;
+  font-family: 'Lato', sans-serif;
+}
+
+/* 
+  Buttons for user to guess letters
+  */
+#alphabet{
+  display: block;
+  padding: 3rem;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+#alphabet input[type="button"] {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline;
+  margin: 0.5rem;  
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: white;
+  border-radius: 0.25rem;
+  list-style: none;
+  color: black;
+  cursor: pointer;
+  border: solid 1px black;
+}
+
+#alphabet input:hover{
+      background: #e6e5fb;
+      border: solid 1px blue;
+      color: blue;
+}
+    
+#alphabet input:disabled {
+    cursor: default;
+    background: #F5F5F5;
+    border: white;
+    color : #C3C3C3;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
