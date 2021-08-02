@@ -1,24 +1,56 @@
----
-layout: default
-title: Try chatting with a bot!
----
+<!DOCTYPE html>
+	<html lang="en"> <!--This website content is in English-->
+		<head>
+			<title>Try chatting with a bot!</title>
+			<link rel="icon" href="/../../css/window_icon.png">
+			<!--link to game javascript -->
+			<script type="text/javascript" src="chat.js"></script>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/../../css/main.css">
+      <meta charset="utf-8" />
+		</head>
+					<!--Navigation links to topics-->
+			<nav>
+	    			<ul>
+	        			<li><a href="/home">Home</a></li> 
+					<li><a href="/explore">Learn</a></li>
+	        			<li><a href="/chat">Chat</a></li>
+        				<li><a href="/play">Play</a></li>
+        				<li><a href="/my-helper-scripts">Helpers</a></li>
+	    			</ul>
+			</nav>	
+		<body>	
+      <div class ="chatPageBanner">
+        <img src="/../../css/banner_chat.png" alt="Chat Banner">
+      </div>
+      
+			<div class="message_display">
+        <h1>
+          Messages
+        </h1>
+        <div id="all_sent_messages"></div>
+      </div>
 
-<div class ="postBanner">
-  <img src="/../../css/banner_chat.png" alt="Chat Banner">
-</div>
-<div class="message_display">
-  <h1>
-    Messages
-  </h1>
-  <div id="all_sent_messages"></div>
-</div>
+      <div class="write_message">
 
-<div class="write_message">
+        <input id="toName" type="text" />
+        <br /><br />
+        <textarea id="newMessage"></textarea>
+        <br /><br />
+        <input id="sendButton" type="button" value="send" />
+      </div>
 
-  <input id="toName" type="text" />
-  <br /><br />
-  <textarea id="newMessage"></textarea>
-  <br /><br />
-  <input id="sendButton" type="button" value="send" />
-</div>
+			
+			<!-- Site footer -->
+			<footer class ="footer-site">
+            			<ul class="footer-link">
+              				<li><a href="/goodies">Secret Kitchen</a></li>                        
+	        	  		<li><a href="/index">Index</a></li>
+        		  		<li><a href="/about">About</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
+
+
 
