@@ -631,6 +631,7 @@ canvas{
 }
 
 #HangmanUnknownWord li{
+  margin: 0;
   list-style: none;
   display: inline;
   padding: 1rem;
