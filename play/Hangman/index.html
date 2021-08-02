@@ -18,12 +18,20 @@
         				<li><a href="/play">Play</a></li>
         				<li><a href="/my-helper-scripts">Helpers</a></li>
 	    			</ul>
-			</nav>
-		<header class ="game-header">
-			<h1>Hangman</h1>
-		</header>		
-		<body>			
-			<canvas id="HangmanCanvas"></canvas>
+			</nav>	
+		<body>	
+			<header class ="game-header">
+			<h1>Play! Hangman</h1>
+			</header>	
+			<div class="game_instruction">
+			<p id="game_description">
+			Click on a letter to guess the word!
+			</p>
+			</div>
+			<canvas id="HangmanCanvas" ></canvas>
+			<div id = "HangmanUnknownWord"> </div>
+			<div id = "HangmanWrongGuesses"></div>      
+			<div id="input_letters"></div>
 			
 			<!-- Site footer -->
 			<footer class ="footer-site">
