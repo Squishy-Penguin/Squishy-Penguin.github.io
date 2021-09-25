@@ -1,0 +1,32 @@
+---
+layout: default
+title: "Basic C - Getting Started"
+---
+<p>2021 Sept - Please note: the following guide is intended for Windows 10 computers and laptops.</p><br />
+
+<h1>Download VS 2019 onto your computer </h1>
+<p>To write, build, and debug C projects efficiently, I recommend using Microsoft's Visual Studio 2019. You can find this on their official website at: https://visualstudio.microsoft.com/vs/</p>
+<p>After downloading the installer (.exe), run it.</p>
+<p>Next, check the box next to <b>Desktop development with C++</b> and install.</p>
+<img src="vs_install_0.jpg" alt="Screenshot: check the box next to <b>Desktop development with C++</b> and install">
+
+<h1>Your first C code</h1>
+<p>Create a source code file called "helloworld.c" and type the following into your source code:</p>
+<div class ="codeCode">
+  <p>#include <stdio.h> //do this to use some basic functions in C</p>
+  <p>int main(){ //this is where your code will start executing from</p>
+  <p>printf("Hello, world!"); //display "Hello, world!" on output screen, end your statement with a semi-colon ';'</p>
+  <p>return 0; //tells the computer your code ran successfully</p>
+  <p>} //close the bracket</p>
+</div>
+<p>Now, open terminal or Developer, and type</p>
+<div class ="codeCode">
+  <p>cl helloworld.c</p>
+</div>
+<p>This will compile your C code. Now you'll want to run, or execute your code to actually see what it does. </br> Type into the terminal:</p>
+<div class ="codeCode">
+  <p>helloworld</p>
+</div>
+<p>You should see a screen pop up, with "Hello, world!" printed on it.</p>
+</br>
+<p><b>Congratulations!</b> You've completed your first C program.</p>
