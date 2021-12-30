@@ -95,7 +95,7 @@ function downloaded(){
         docFragMessage.appendChild(message_to_send);
         display_area.appendChild(docFragMessage);
         
-        document.getElementById('debugMessage').innerHTML = message_to_send; // DEBUG
+       //document.getElementById('debugMessage').innerHTML = message_to_send; // DEBUG
         
         //clear typing box
         document.getElementById('newMessage').value = "";
